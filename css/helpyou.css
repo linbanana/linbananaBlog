@@ -1,0 +1,324 @@
+﻿body {
+    overflow-x: hidden;
+    background-color: #ccc;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1564738007343-be7bf8dafe2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-repeat: repeat-y;
+}
+/*毛玻璃效果*/
+.d-flex {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: transparent;
+    background-repeat: repeat-y;
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    
+}
+
+    .d-flex::after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        bottom: -20px;
+        background-image: url(https://images.unsplash.com/photo-1564738007343-be7bf8dafe2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+        background-position: 50% 95%;
+        background-repeat: repeat-y;
+        z-index: -1;
+        filter: blur(5px);
+    }
+/*毛玻璃效果*/
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+    #sidebar-wrapper .sidebar-heading {
+        font-size: 2.5rem;
+        padding: 0px;
+        text-align: center;
+        background-color: #ff75b1;
+        border: #ff0000 3px solid;
+    }
+
+    #sidebar-wrapper .list-group {
+        width: 15rem;
+    }
+
+.list-group-item {
+    overflow: hidden;
+    border: 2px solid #ff75b1;
+}
+/*選單滑鼠滑入按鈕*/
+#sidebar-wrapper .list-group-item:hover{
+    background-color: #ffd800;
+    color: #0026ff;
+    border: #ff0000 2px solid;
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+
+.sidebar- footer {
+    display: flex;
+    flex-direction: column;
+    text-align: bottom;
+}
+
+ul { /*取消ul預設的內縮及樣式*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    ul.list-group li {
+        position: relative;
+        white-space: nowrap;
+        border-color: #ccc 2px solid;
+    }
+
+
+
+    ul.list-group a {
+        background-color: #000000;
+        color: #ffd800;
+        display: block;        
+    }
+
+    /*改變次選單位置*/ /*/#
+    ul.list-group ul {
+        border: #ccc 2px solid;
+        position: absolute;
+        z-index: 999;
+        top: 0%;
+        left: 100%;
+    }
+    /*改變次選單位置*/
+
+
+    ul.list-group ul li {
+        border-bottom: #ccc 2px solid;
+        text-align: right;
+    }
+
+        ul.list-group ul li:last-child {
+            border-bottom: none;
+        }
+
+    ul.list-group ul ul { /*第三層以後的選單出現位置與第二層不同*/
+        position: absolute;
+        z-index: 999;
+        top: 10%;
+        left: 100%;
+    }
+
+
+    ul.list-group ul { /*隱藏次選單*/
+        display: none;
+    }
+
+    ul.list-group li:hover > ul { /* 滑鼠滑入展開次選單+顏色區分*/
+        display: block;
+        border: #0026ff 5px solid;
+        border-bottom-style: double;
+    }
+
+/*----------------------------------------------------------------------*/
+
+/*header文字焦點變更*/
+.navbar {
+    background-color: #333;
+    width: 100%;
+    float: left;
+}
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        .navbar a:hover {
+            background-color: #ff75b1;
+            color: #ffd800;
+            border: 1px solid #ff0000;
+        }
+
+.nav-item .btn {
+    padding: 8px;
+    vertical-align: center;
+    text-align: center;
+}
+
+
+.navbar-nav {
+  float:left;
+}
+
+
+    .navbar-nav:hover {
+        color: #0026ff;
+    }
+
+
+/*----------------------------------------------------------------------*/
+/*header文字焦點變更*/
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    float: left;
+    position:absolute;
+    top: 200px;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+.form-group {
+    display: inline-block;
+    float:right;
+    margin: inherit;
+    left:100px;
+}
+/*----------------------------------------------------------------------*/
+
+/*跑馬燈*/
+#marquee-wrapper {
+    min-width: 100vw;
+    color: #000;
+    float: left;
+}
+/*----------------------------------------------------------------------*/
+
+/*默认面板*/
+.panel-default {
+    border-color: #ddd
+}
+
+    .panel-default > .panel-header {
+        border-color: #ddd;
+        background-color: #f5f5f5;
+        color: #444
+    }
+
+/*主要面板*/
+.panel-primary {
+    border-color: #5a98de
+}
+
+    .panel-primary > .panel-header {
+        border-color: #5a98de;
+        background-color: #5a98de;
+        color: #fff
+    }
+
+/*次要面板*/
+.panel-secondary {
+    border-color: #3bb4f2
+}
+
+    .panel-secondary > .panel-header {
+        border-color: #3bb4f2;
+        background-color: #3bb4f2;
+        color: #fff
+    }
+
+/*成功面板*/
+.panel-success {
+    border-color: #5eb95e
+}
+
+    .panel-success > .panel-header {
+        border-color: #5eb95e;
+        background-color: #5eb95e;
+        color: #fff
+    }
+
+/*警告面板*/
+.panel-warning {
+    border-color: #f37b1d
+}
+
+    .panel-warning > .panel-header {
+        border-color: #f37b1d;
+        background-color: #f37b1d;
+        color: #fff
+    }
+
+/*危险面板*/
+.panel-danger {
+    border-color: #dd514c
+}
+
+    .panel-danger > .panel-header {
+        border-color: #dd514c;
+        background-color: #dd514c;
+        color: #fff
+    }
+
+.pd{
+    padding-top: 20px;
+    padding-left:5px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.help-main {
+    border:2px dashed #000;
+    margin-left:40px;
+}
+
+.job-list-body .job-list .b-block__left {
+    float: left;
+    width: 76%;
+}
+
+
+/*----------------------------------------------------------------------*/
+/*偵測大小*/
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+/*偵測大小*/
+/*----------------------------------------------------------------------*/
