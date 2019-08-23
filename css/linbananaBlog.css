@@ -1,5 +1,5 @@
 
-
+/*container*/
 .navbar-dark .navbar-brand{
 	color: #00ff80;
 	font-size:1.5rem;
@@ -8,4 +8,22 @@
  .navbar-dark .navbar-toggler{
     border-color: #fff;
 }
+
+.active a{
+    color: yellow !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #fff;
+	font-size: 1.5rem;	
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #00d0ff;
+}
+
+
+
+
+/*container*/
 
