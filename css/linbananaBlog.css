@@ -1,7 +1,11 @@
-body {
-  padding-top: 56px;
+
+
+.navbar-dark .navbar-brand{
+	color: #00ff80;
+	font-size:1.5rem;
 }
 
-.row{
-   margin-top: 56px;
+ .navbar-dark .navbar-toggler{
+    border-color: #fff;
 }
+
