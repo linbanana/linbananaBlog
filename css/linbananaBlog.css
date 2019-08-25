@@ -2,6 +2,16 @@ body{
 	background-color: #ccc;
 }
 
+/*Navigation*/
+.text-purple{
+	color: #6441a4 !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: #ccc;
+}
+/*Navigation*/
+
 /*大頭照*/
 .card-img-myphoto{
 	width: 100%;
@@ -10,7 +20,6 @@ body{
     border-radius: 50%;
 }
 /*大頭照*/
-
 
 /*container*/
 .navbar-dark .navbar-brand{
@@ -33,14 +42,6 @@ body{
 
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #00d0ff;
-}
-
-.dropdown-item:hover{
-	color: #ff0000;
-}
-
-.text-purple{
-	color: #6441a4 !important;
 }
 /*container*/
 
