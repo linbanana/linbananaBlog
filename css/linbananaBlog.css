@@ -2,6 +2,10 @@ body{
 	background-color: #ccc;
 }
 
+.text-purple{
+	color: #6441a4 !important;
+}
+
 
 /*container*/
 .navbar-dark .navbar-brand{
