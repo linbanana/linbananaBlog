@@ -2,10 +2,6 @@ body{
 	background-color: #ccc;
 }
 
-.text-purple{
-	color: #6441a4 !important;
-}
-
 /*大頭照*/
 .card-img-myphoto{
 	width: 100%;
@@ -42,6 +38,10 @@ body{
 
 .dropdown-item:hover{
 	color: #ff0000;
+}
+
+.text-purple{
+	color: #6441a4 !important;
 }
 /*container*/
 
