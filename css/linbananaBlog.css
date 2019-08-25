@@ -6,6 +6,16 @@ body{
 	color: #6441a4 !important;
 }
 
+/*大頭照*/
+.card-img-myphoto{
+	width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 50%;
+    color: #ccc;
+}
+/*大頭照*/
+
 
 /*container*/
 .navbar-dark .navbar-brand{
