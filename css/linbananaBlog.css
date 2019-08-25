@@ -8,7 +8,6 @@ body{
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     border-radius: 50%;
-    color: #ccc;
 }
 /*大頭照*/
 
