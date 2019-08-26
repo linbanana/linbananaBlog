@@ -21,7 +21,7 @@
 <body>
   
   <!-- Navigation --> 
-  <div w3-include-html="../layouts/navbar.html"></div>
+  <div w3-include-html="layouts/navbar.html"></div>
 
 
   <!-- Page Content -->
@@ -30,24 +30,19 @@
     <div class="row">
 
       <!-- Blog Entries Column -->
-      <div class="col-md-8">        
+      <div class="col-md-8">
 
-        <!-- Blog Post -->
-        <div class="card mb-4">     
-
-          <div w3-include-html="content/Github pages_content.html"></div>
-          <div w3-include-html="../layouts/disqus.html"></div>    
-
-        </div>
-
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-          <div w3-include-html="../layouts/sidebar.html"></div>  
-
-        </div>
+      <div w3-include-html="article/content/HTML CUT_content.html"></div>  
 
       </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+      <div w3-include-html="layouts/sidebar.html"></div>  
+
+      </div>
+
     </div>
     <!-- /.row -->
 
@@ -55,7 +50,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <div w3-include-html="../layouts/footer.html"></div>
+     <div w3-include-html="layouts/footer.html"></div>
 
   <!-- Facebook -->
   <div id="fb-root"></div>
