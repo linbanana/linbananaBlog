@@ -10,46 +10,19 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="css/linbananaBlog.css" rel="stylesheet" />
     <!-- 環境建置 -->
+    <!-- w3 js -->
+    <script src="Scripts/w3.js"></script>
+    <!-- w3 js -->
 
-    <title>Page not found · linbanana`Blog</title>
+
+    <title>linbanana`Blog</title>
 </head>
 
 <body>
-    
-    <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">巴那那`Blog</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">首頁
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">關於我</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">404</a>
-          </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">社群媒體</a>
-            <div class="dropdown-menu">              
-              <a class="dropdown-item fa fa-facebook-square fa-1g text-primary" href="https://www.facebook.com/linbanana0803/">　Facebook</a>
-              <a class="dropdown-item fa fa-youtube-play fa-1g text-danger" href="https://goo.gl/RKe4xf">　Youtube</a>
-              <a class="dropdown-item fa fa-twitch fa-1g text-purple" href="https://www.twitch.tv/linbanana">　Twitch</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="dropdown-item addthis_tipjar_inline"></div>
-            </div>
-          </li>                        
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
+  <!-- Navigation --> 
+  <div w3-include-html="layouts/navbar.html"></div>
+
 
   <!-- Page Content -->
   <div class="container">
@@ -57,186 +30,7 @@
     <div class="row">
 
       <!-- Blog Entries Column -->
-      <div class="col-md-8">            
-
-     <!-- Blog Post -->
-        <div class="card border-danger my-4 mb-4">          
-          <div class="card-body">
-            <h1 class="card-title text-center" >404</h1>
-            <p class="card-text text-center">Page not found，不要趁機搞事</p>
-          </div>
-          <div class="card-footer text-muted">
-            by
-            <a href="#">巴那那</a>
-          </div>
-        </div>
-        
-       <!-- Pagination -->
-        <ul class="pagination justify-content-center mb-4">
-          <li class="page-item">
-            <a class="page-link" href="index.html"><img src="svg/home.svg"></a>
-          </li>          
-        </ul>
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-         <!-- 大頭照 -->
-        <div class="card my-4">
-          <img class="card-img-myphoto" src="Image/banana/20190105 korea.jpg" alt="banana">
-        </div>
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Facebook Widget -->
-        <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML</a>
-                  </li>
-                  <li>
-                    <a href="#">C#</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Java</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="my-4 py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
-
-    <!-- 環境建置 -->
-    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
-    <script src="Scripts/popper.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/linbananaBlog.js"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
-    <!-- 環境建置 -->
-</body>
-</html
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- 環境建置 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/linbananaBlog.css" rel="stylesheet" />
-    <!-- 環境建置 -->
-
-    <title>Page not found · linbanana`Blog</title>
-</head>
-
-<body>
-    
-    <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">巴那那`Blog</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">首頁
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">關於我</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">404</a>
-          </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">社群媒體</a>
-            <div class="dropdown-menu">              
-              <a class="dropdown-item fa fa-facebook-square fa-1g text-primary" href="https://www.facebook.com/linbanana0803/">　Facebook</a>
-              <a class="dropdown-item fa fa-youtube-play fa-1g text-danger" href="https://goo.gl/RKe4xf">　Youtube</a>
-              <a class="dropdown-item fa fa-twitch fa-1g text-purple" href="https://www.twitch.tv/linbanana">　Twitch</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="dropdown-item addthis_tipjar_inline"></div>
-            </div>
-          </li>                        
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <div class="row">
-
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">            
+      <div class="col-md-8">
 
       <div w3-include-html="article/404 pages.html"></div>  
 
@@ -245,69 +39,7 @@
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4">
 
-         <!-- 大頭照 -->
-        <div class="card my-4">
-          <img class="card-img-myphoto" src="Image/banana/20190105 korea.jpg" alt="banana">
-        </div>
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Facebook Widget -->
-        <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML</a>
-                  </li>
-                  <li>
-                    <a href="#">C#</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Java</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
+      <div w3-include-html="layouts/sidebar.html"></div>  
 
       </div>
 
@@ -318,12 +50,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="my-4 py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+     <div w3-include-html="layouts/footer.html"></div>
 
     <!-- Facebook -->
     <div id="fb-root"></div>
@@ -337,5 +64,11 @@
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
     <!-- 環境建置 -->
+
+    <!-- w3 js -->
+    <script>
+    w3.includeHTML();
+    </script>
+    <!-- w3 js -->
 </body>
 </html
