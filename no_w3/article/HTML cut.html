@@ -10,6 +10,9 @@
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="../../css/linbananaBlog.css" rel="stylesheet" />
     <!-- 環境建置 -->
+    <!-- 加載Google Google Code Prettify -->
+    <script src="../../Scripts/run_prettify.js"></script>
+    <!-- 加載Google Google Code Prettify -->
 
     <title>linbanana`Blog</title>
 </head>
@@ -63,33 +66,37 @@
         <div class="card mb-4">         
           <div class="card-body">
             <h2 class="card-title">將HTML切割引用至其他分頁上</h2><br/>
-            <h3 class="card-text">1、請在<code>&lt;head&gt;</code>中加入</h3>
+            <h3 class="card-text">1、請在<code class="prettyprint">&lt;head&gt;</code>中加入</h3>
             <h3 class="card-text">
-              <code>&lt;script src="https://www.w3schools.com/lib/w3.js"&gt;&lt;/script&gt;</code>
+              <pre><code class="prettyprint">
+              &lt;script src="https://www.w3schools.com/lib/w3.js"&gt;&lt;/script&gt;
+              </code></pre>
             </h3><br/>
             <h3 class="card-text">或者將該檔案下載，存入js目錄下，並引入之亦可：</h3>
             <h3 class="card-text">
-              <code>&lt;script src="js/w3.js"&gt;&lt;/script&gt;</code>
+              <code class="prettyprint">&lt;script src="js/w3.js"&gt;&lt;/script&gt;</code>
             </h3><br/>
-            <h3 class="card-text">2、接著在<code>&lt;/body&gt;</code>之前加入</h3>
+            <h3 class="card-text">2、接著在<code class="prettyprint">&lt;/body&gt;</code>之前加入</h3>
             <h3 class="card-text">
-              <code>
-                  &lt;!-- Optional JavaScript --&gt;<br/>
-                  &lt;script&gt;<br/>
-                      w3.includeHTML();<br/>
-                  &lt;/script&gt;<br/>
-              </code>
+              <pre><code class="prettyprint">
+                &lt;!-- Optional JavaScript --&gt;
+                &lt;script&gt;
+                w3.includeHTML();
+                &lt;/script&gt;
+              </code></pre>
             </h3><br/>
             <h3 class="card-text">這樣就完成基本步驟了！</h3><br/>
             <h3 class="card-text">3、在需要引入的位置貼入以下語法即可引入 xxx.html</h3>
             <h3 class="card-text">
-              <code>&lt;div w3-include-html="xxx.html"&gt;&lt;/div&gt;</code><br/>
+              <pre><code class="prettyprint">
+              &lt;div w3-include-html="xxx.html"&gt;&lt;/div&gt;
+            </code></pre><br/>
             </h3>
 
 
           </div>
-          <div class="card-footer text-muted">
-            2019/08/24 by
+          <div class="card-footer text-muted fa fa-calendar">
+             2019/08/26 by
             <a href="#">巴那那</a>
             <div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
           </div>
@@ -229,7 +236,7 @@
     <script src="../../Scripts/linbananaBlog.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
-    <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>    
     <!-- 環境建置 -->
 </body>
 </html
