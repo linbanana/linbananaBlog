@@ -50,6 +50,11 @@ pre{
 	color: #00d0ff;
 	text-decoration: underline;
 }
+
+.navbar-toggler{
+	position: absolute;
+	right: 10px;
+}
 /*Navigation*/
 
 /*container*/
@@ -94,7 +99,7 @@ pre{
 }
 
 
-/*---*/
+/*search*/
 .searchbtn{
 	display: inline-block;
     border: 1px solid transparent;
@@ -103,6 +108,11 @@ pre{
     line-height: 1.5;
     border-radius: 50rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.searchdropdown{
+	position: relative;
+	right: 60px;
 }
 
 .searchdropdown a:hover{
@@ -152,4 +162,30 @@ pre{
 
 .show {
 	display: block;
+}
+/*search*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
 }
