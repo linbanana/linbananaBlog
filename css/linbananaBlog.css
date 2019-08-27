@@ -105,6 +105,11 @@ pre{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.searchdropdown a:hover{
+	width: 0px;
+    height: 0px;
+}
+
 #key-in {
   box-sizing: border-box;
   background-position: 14px 12px;
