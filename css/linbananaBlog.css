@@ -50,11 +50,6 @@ pre{
 	color: #00d0ff;
 	text-decoration: underline;
 }
-
-.navbar-toggler{
-	position: absolute;
-	right: 10px;
-}
 /*Navigation*/
 
 /*container*/
@@ -110,11 +105,6 @@ pre{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.searchdropdown{
-	position: relative;
-	right: 60px;
-}
-
 .searchdropdown a:hover{
 	width: 0px;
     height: 0px;
@@ -168,10 +158,29 @@ pre{
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
+	.searchdropdown{
+	position: relative;
+	right: 60px;
+	}
+
+	.navbar-toggler{
+	position: absolute;
+	right: 10px;
+}
+}
+
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.searchdropdown{
+	position: relative;
+	right: 60px;
+	}
+
+	.navbar-toggler{
+	position: absolute;
+	right: 10px;
 
 }
 
