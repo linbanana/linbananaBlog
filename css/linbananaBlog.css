@@ -30,13 +30,18 @@ pre{
 }
 
 /*Navigation*/
-.navbar-dark .navbar-brand{
+.site-logo img{
+	max-height: 2rem;
+}
+
+.site-title{
 	color: #00ff80;
 	font-size:1.5rem;
 }
 
- .navbar-dark .navbar-toggler{
-    border-color: #fff;
+.site-title:hover{
+	text-decoration: none;
+	color: #fff;
 }
 
 .active a{
