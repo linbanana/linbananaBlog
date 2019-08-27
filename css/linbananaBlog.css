@@ -6,50 +6,30 @@ pre{
 	background-color: #ccc;
 }
 
+.card{
+	border: 1.5px solid #ffd4aa;
+}
+
 /*Navigation*/
+
+.navbar {
+    transition: top 0.5s ease;
+}
+
+.navbar-hide {
+    top: -68px;
+}
+
+.site-logo img {
+    max-height: 2rem;
+}
+
 .text-purple{
 	color: #6441a4 !important;
 }
 
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: #ccc;
-}
-/*Navigation*/
-
-/*大頭照*/
-.card-img-myphoto{
-	width: 100%;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
-    border-radius: 50%;
-}
-
-.card-name{
-	font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
-	font-size: 1em;
-}
-/*大頭照*/
-
-.card{
-	border: 1.5px solid #ffd4aa;
-}
-
-/*Navigation*/
-.site-logo img{
-	max-height: 2rem;	
-}
-
-.site-title{
-	color: #00ff80;
-	font-size:1.5rem;
-	margin-left: 0;	
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-    align-self: center;
-    font-weight: bold;
-    z-index: 20;
 }
 
 .site-title:hover{
@@ -83,7 +63,22 @@ pre{
 }
 /*container*/
 
-/*sidebar*/
+/*<-- sidebar -->*/
+
+/*大頭照*/
+.card-img-myphoto{
+	width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 50%;
+}
+
+.card-name{
+	font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
+	font-size: 1em;
+}
+/*大頭照*/
+
 .sidebar-card-body
 {
 	flex: 1 1 auto;
