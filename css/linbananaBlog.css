@@ -23,6 +23,11 @@ pre{
     border-top-right-radius: calc(.25rem - 1px);
     border-radius: 50%;
 }
+
+.card-name{
+	font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
+	font-size: 1em;
+}
 /*大頭照*/
 
 .card{
@@ -31,12 +36,20 @@ pre{
 
 /*Navigation*/
 .site-logo img{
-	max-height: 2rem;
+	max-height: 2rem;	
 }
 
 .site-title{
 	color: #00ff80;
 	font-size:1.5rem;
+	margin-left: 0;	
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: bold;
+    z-index: 20;
 }
 
 .site-title:hover{
@@ -55,6 +68,7 @@ pre{
 
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #00d0ff;
+	text-decoration: underline;
 }
 /*Navigation*/
 
