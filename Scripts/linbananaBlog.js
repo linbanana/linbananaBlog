@@ -21,3 +21,35 @@ $(window).scroll(function(e) {
 
 });
 /* navbar scroll functions */
+
+/* search */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function searchFunction() {
+    var input, filter, cards, cardContainer, h2, title, ul, li, a, i;
+    input = document.getElementById("key-in");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("article");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h2.card-title");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+/* search */
