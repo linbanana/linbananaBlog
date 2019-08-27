@@ -25,7 +25,11 @@ pre{
 }
 /*大頭照*/
 
-/*container*/
+.card{
+	border: 1.5px solid #ffd4aa;
+}
+
+/*Navigation*/
 .navbar-dark .navbar-brand{
 	color: #00ff80;
 	font-size:1.5rem;
@@ -47,12 +51,30 @@ pre{
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #00d0ff;
 }
+/*Navigation*/
+
+/*container*/
+.card-title{
+	text-decoration: underline;
+}
+
+.card-body{
+	background-color: #f5e1d8;
+	border-bottom: 1.5px solid #ffd4aa;	
+}
 /*container*/
 
+/*sidebar*/
+.sidebar-card-body
+{
+	flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
 .back-to-top {
-    cursor: pointer;
+ 	cursor: pointer;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 80px;
+    right: 10px;
     border-radius: 50%;
 }
