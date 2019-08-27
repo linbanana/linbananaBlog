@@ -48,3 +48,11 @@ pre{
 	color: #00d0ff;
 }
 /*container*/
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
