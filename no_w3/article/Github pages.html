@@ -2,21 +2,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- 環境建置 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="../../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../css/linbananaBlog.css" rel="stylesheet" />
-    <!-- 環境建置 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- 環境建置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="../../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+  <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../css/linbananaBlog.css" rel="stylesheet" />
+  <!-- 環境建置 -->
 
-    <title>linbanana`Blog</title>
+  <title>linbanana`Blog</title>
 </head>
 
 <body>
-    
-    <!-- Navigation -->
+  
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">巴那那`Blog</a>
@@ -56,39 +56,108 @@
 
     <div class="row">
 
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">        
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
 
-        <!-- Blog Post -->
-        <div class="card mb-4 my-4">         
-          <div class="card-body">
-            <h2 class="card-title">使用Github pages創建自己的Blog吧！</h2><br/>
-            <h2 class="card-text">首先要先註冊Github的帳號與密碼！<br/><br/></h2>
-            <h3 class="card-text">1、Create a new repository</h3>
-            <img class="card-img-top" src="../../Image/Github pages/1.PNG" alt="1">
-            <br/><br/>
-            <h3 class="card-text">2、create branch：gh-pages</h3>
-            <img class="card-img-top" src="../../Image/Github pages/2.PNG" alt="2">
-            <h3 class="card-text">3、點選settings，設定預設branch</h3>
-            <img class="card-img-top" src="../../Image/Github pages/3.PNG" alt="3">
-            <h3 class="card-text">4、create new file</h3>
-            <img class="card-img-top" src="../../Image/Github pages/4.PNG" alt="4">
-            <h3 class="card-text">5、點選settings 在Options找到GitHub Pages </h3>
-            <img class="card-img-top" src="../../Image/Github pages/5.PNG" alt="5">
-            <h3 class="card-text">6、點選網址就可以看到您的Github pages囉！ </h3>
-            <img class="card-img-top" src="../../Image/Github pages/6.PNG" alt="6">
-            <h4>恭喜您完成了第一個成就！趕快動手創建屬於自己的Blog吧~</h4>
-          </div>
-          <div class="card-footer text-muted fa fa-calendar">
-            2019/08/24 by
-            <a href="#">巴那那</a>
-            <div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
-          </div>
+       <!-- 大頭照 -->
+       <div class="card my-4">
+        <img class="card-img-myphoto" src="../../Image/banana/20190105 korea.jpg" alt="linbanana">
+      </div>
 
-          <!-- Disqus -->
-          <div id="disqus_thread"></div>
-          
-            <script>
+      <!-- Search Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Search</h5>
+        <div class="card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><img src="../../svg/search.svg"></button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook Widget -->
+      <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
+
+      <!-- Categories Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Categories</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                <li>
+                  <a href="#">C#</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+                <li>
+                  <a href="#">CSS</a>
+                </li>
+                <li>
+                  <a href="#">Java</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Side Widget</h5>
+        <div class="sidebar-card-body">
+          You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">        
+
+      <!-- Blog Post -->
+      <div class="card mb-4 my-4">         
+        <div class="card-body">
+          <h2 class="card-title">使用Github pages創建自己的Blog吧！</h2><br/>
+          <h2 class="card-text">首先要先註冊Github的帳號與密碼！<br/><br/></h2>
+          <h3 class="card-text">1、Create a new repository</h3>
+          <img class="card-img-top" src="../../Image/Github pages/1.PNG" alt="1">
+          <br/><br/>
+          <h3 class="card-text">2、create branch：gh-pages</h3>
+          <img class="card-img-top" src="../../Image/Github pages/2.PNG" alt="2">
+          <h3 class="card-text">3、點選settings，設定預設branch</h3>
+          <img class="card-img-top" src="../../Image/Github pages/3.PNG" alt="3">
+          <h3 class="card-text">4、create new file</h3>
+          <img class="card-img-top" src="../../Image/Github pages/4.PNG" alt="4">
+          <h3 class="card-text">5、點選settings 在Options找到GitHub Pages </h3>
+          <img class="card-img-top" src="../../Image/Github pages/5.PNG" alt="5">
+          <h3 class="card-text">6、點選網址就可以看到您的Github pages囉！ </h3>
+          <img class="card-img-top" src="../../Image/Github pages/6.PNG" alt="6">
+          <h4>恭喜您完成了第一個成就！趕快動手創建屬於自己的Blog吧~</h4>
+        </div>
+        <div class="card-footer text-muted fa fa-calendar">
+          2019/08/24 by
+          <a href="#">巴那那</a>
+          <div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+        </div>
+
+        <!-- Disqus -->
+        <div id="disqus_thread"></div>
+        
+        <script>
 
             /**
             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -100,14 +169,14 @@
             };
             */
             (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://linbanana.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+              var d = document, s = d.createElement('script');
+              s.src = 'https://linbanana.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
             })();
 
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         </div>        
 
@@ -128,76 +197,6 @@
         </ul>
 
       </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-         <!-- 大頭照 -->
-        <div class="card my-4">
-          <img class="card-img-myphoto" src="../../Image/banana/20190105 korea.jpg" alt="linbanana">
-        </div>
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-primary" type="button"><img src="../../svg/search.svg"></button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Facebook Widget -->
-        <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML</a>
-                  </li>
-                  <li>
-                    <a href="#">C#</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Java</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="sidebar-card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
-      </div>
-
     </div>
     <!-- /.row -->
 
@@ -214,18 +213,18 @@
   <!-- back-to-top -->
   <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-angle-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
 
-    <!-- 環境建置 -->
-    <script src="../../Scripts/jquery-3.4.1.slim.min.js"></script>
-    <script src="../../Scripts/popper.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
-    <script src="../../Scripts/linbananaBlog.js"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
-    <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
-    <!-- 環境建置 -->
+  <!-- 環境建置 -->
+  <script src="../../Scripts/jquery-3.4.1.slim.min.js"></script>
+  <script src="../../Scripts/popper.min.js"></script>
+  <script src="../../Scripts/bootstrap.min.js"></script>
+  <script src="../../Scripts/linbananaBlog.js"></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
+  <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+  <!-- 環境建置 -->
 </body>
 </html

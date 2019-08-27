@@ -2,21 +2,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- 環境建置 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/linbananaBlog.css" rel="stylesheet" />
-    <!-- 環境建置 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- 環境建置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/linbananaBlog.css" rel="stylesheet" />
+  <!-- 環境建置 -->
 
-    <title>linbanana`Blog</title>
+  <title>linbanana`Blog</title>
 </head>
 
 <body>
-    
-    <!-- Navigation -->
+  
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">巴那那`Blog</a>
@@ -56,41 +56,112 @@
 
     <div class="row">
 
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+       <!-- 大頭照 -->
+       <div class="card my-4">
+        <img class="card-img-myphoto" src="../Image/banana/20190105 korea.jpg" alt="linbanana">
+      </div>        
+
+      <!-- Search Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Search</h5>
+        <div class="sidebar-card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><img src="../svg/search.svg"></button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook Widget -->
+      <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
+
+      <!-- Categories Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Categories</h5>
+        <div class="sidebar-card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                <li>
+                  <a href="#">C#</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+                <li>
+                  <a href="#">CSS</a>
+                </li>
+                <li>
+                  <a href="#">Java</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Side Widget</h5>
+        <div class="sidebar-card-body">
+          You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
 
       <!-- AboutMe Post -->
       <div class="card mb-4 my-4">
-      <img class="card-img-top" src="../Image/粉專2.gif" alt="Card image cap">
-      <div class="card-body">
-        <p class="card-text">我叫林昭穎。來自台灣省高雄市林園區，我很親切、認真又肯打拼的特質，也在林園展開了我不一樣的求學與求職生涯。<br/><br/>
+        <img class="card-img-top" src="../Image/粉專2.gif" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">我叫林昭穎。來自台灣省高雄市林園區，我很親切、認真又肯打拼的特質，也在林園展開了我不一樣的求學與求職生涯。<br/><br/>
+            
+
+            學歷：<br/>
+            高職：三信家商 - 資料處理科<br/>
+            大學：正修科技大學 - 企業管理系<br/>
+            因對程式設計有極大的興趣，所以大二就學期間有至外面補習班學Java，大四有選修資工系的課程，並且通過考試取得Java  SCJP,丙級電腦軟體設計技術士,丙級電腦軟體應用技術士專業資格。
+            <br/><br/>  
+
+            工作經歷：<br/>
+            加油員／全國加油站<br/>
+            工作內容：加油、洗車、辦卡。<br/><br/>
+
+            高階門市職員／全家便利商店<br/>
+            工作內容：太多了，略。<br/><br/>
+
+            技術員／尚承鋼鐵<br/>
+            工作內容：因是新廠擴建，所以當下學的東西蠻廣的，學會焊接、氧乙炔切割鋼板，鋼構水平垂直測量、電氣室和變壓站蓋板製作、現場設備操作等等。<br/><br/>
+
+            助理工程師／安能聚綠能股份有限公司<br/>
+            工作內容：組裝設備且進行設備改良、協助研發測試的工作。<br/><br/>
+
+            眼看電腦科技不停的發展、不停的創造，不甘落於潮流之後的我也急起直追，運用JAVA,C#等其他"自學"技能。 甚至將自己寫的程式放到Github中，當下也解決了生活上遇到的問題。<br/>
+            大學就學期間，也獨立客製化了報告動畫。<br/><br/>
+
+            這是我的企業管理相關作品：<a href="https://drive.google.com/drive/folders/1oZ7tikvvcTAFgqOqX9J2xWkCrnJNhkel?usp=sharing" class="card-link">快來看看吧！</a>       
+          </p>
           
-
-        學歷：<br/>
-        高職：三信家商 - 資料處理科<br/>
-        大學：正修科技大學 - 企業管理系<br/>
-        因對程式設計有極大的興趣，所以大二就學期間有至外面補習班學Java，大四有選修資工系的課程，並且通過考試取得Java  SCJP,丙級電腦軟體設計技術士,丙級電腦軟體應用技術士專業資格。
-         <br/><br/>  
-
-        工作經歷：<br/>
-        加油員／全國加油站<br/>
-        工作內容：加油、洗車、辦卡。<br/><br/>
-
-        高階門市職員／全家便利商店<br/>
-        工作內容：太多了，略。<br/><br/>
-
-        技術員／尚承鋼鐵<br/>
-        工作內容：因是新廠擴建，所以當下學的東西蠻廣的，學會焊接、氧乙炔切割鋼板，鋼構水平垂直測量、電氣室和變壓站蓋板製作、現場設備操作等等。<br/><br/>
-
-        助理工程師／安能聚綠能股份有限公司<br/>
-        工作內容：組裝設備且進行設備改良、協助研發測試的工作。<br/><br/>
-
-        眼看電腦科技不停的發展、不停的創造，不甘落於潮流之後的我也急起直追，運用JAVA,C#等其他"自學"技能。 甚至將自己寫的程式放到Github中，當下也解決了生活上遇到的問題。<br/>
-        大學就學期間，也獨立客製化了報告動畫。<br/><br/>
-
-         這是我的企業管理相關作品：<a href="https://drive.google.com/drive/folders/1oZ7tikvvcTAFgqOqX9J2xWkCrnJNhkel?usp=sharing" class="card-link">快來看看吧！</a>       
-        </p>
-        
 
 
           <a href="https://github.com/linbanana" class="btn btn-primary">我的Github &rarr;</a>
@@ -101,116 +172,44 @@
           <a href="#">巴那那</a>
         </div>
       </div>
-       
+      
 
-        <!-- Pagination -->
-        <ul class="pagination justify-content-center mb-4">
-          <li class="page-item">
-            <a class="page-link" href="index.html"><img src="../svg/home.svg"></a>
-          </li>          
-        </ul>
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-       <!-- 大頭照 -->
-        <div class="card my-4">
-          <img class="card-img-myphoto" src="../Image/banana/20190105 korea.jpg" alt="linbanana">
-        </div>        
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="sidebar-card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-primary" type="button"><img src="../svg/search.svg"></button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Facebook Widget -->
-        <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="sidebar-card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML</a>
-                  </li>
-                  <li>
-                    <a href="#">C#</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Java</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="sidebar-card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
-        
-
-      </div>
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center mb-4">
+        <li class="page-item">
+          <a class="page-link" href="index.html"><img src="../svg/home.svg"></a>
+        </li>          
+      </ul>
 
     </div>
-    <!-- /.row -->
-
   </div>
-  <!-- /.container -->
+  <!-- /.row -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 2019</p>
-    </div>
-  </footer>
+</div>
+<!-- /.container -->
 
-  <!-- back-to-top -->
-  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-angle-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; 2019</p>
+  </div>
+</footer>
 
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+<!-- back-to-top -->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-angle-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-    <!-- 環境建置 -->
-    <script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
-    <script src="../Scripts/popper.min.js"></script>
-    <script src="../Scripts/bootstrap.min.js"></script>
-    <script src="../Scripts/linbananaBlog.js"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
-    <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
-    <!-- 環境建置 -->
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+
+<!-- 環境建置 -->
+<script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="../Scripts/popper.min.js"></script>
+<script src="../Scripts/bootstrap.min.js"></script>
+<script src="../Scripts/linbananaBlog.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
+<script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+<!-- 環境建置 -->
 </body>
 </html
