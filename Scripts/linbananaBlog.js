@@ -65,7 +65,7 @@ function searchFunction() {
 function Followfunction() {
   var x = document.getElementById('follow');
   if (x.style.display === 'none') {
-    x.style.display = 'inline';
+    x.style.display = 'block';
   } else {
     x.style.display = 'none';
   }
