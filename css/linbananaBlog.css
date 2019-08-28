@@ -62,6 +62,10 @@ pre{
 	color: #00d0ff;
 	text-decoration: underline;
 }
+
+.navbar-dark .navbar-toggler{
+  border-color: #fff;
+}
 /*Navigation*/
 
 /*container*/
