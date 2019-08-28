@@ -6,6 +6,7 @@ pre{
 	background-color: #ccc;
 }
 
+/*all card邊框*/
 .card{
 	border: 1.5px solid #ffd4aa;
 }
@@ -24,17 +25,28 @@ pre{
     max-height: 2rem;
 }
 
+.site-title{
+	flex: auto;
+	font-size: 1.5rem;
+	color: #00e5ff;
+	align-self:center;
+	font-weight:bold;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.site-title:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
 .text-purple{
 	color: #6441a4 !important;
 }
 
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: #ccc;
-}
-
-.site-title:hover{
-	text-decoration: none;
-	color: #fff;
 }
 
 .active a{
@@ -95,8 +107,9 @@ pre{
 
 
 /*search*/
+
 .searchbtn{
-	display: inline-block;
+	  display: inline-block;
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -106,37 +119,32 @@ pre{
 }
 
 .searchdropdown a:hover{
-	width: 0px;
-    height: 0px;
+    background-color: transparent;
 }
 
 #key-in {
   box-sizing: border-box;
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
   font-size: 16px;
   padding: 14px 20px 12px 45px;
   border: none;
-  border-bottom: 1px solid #ddd;
+  width: 100%;
 }
 
-#key-in:focus {outline: 3px solid #ddd;}
+input[type=text]{
+	background-color: #ddd;
+}
 
-.searchdropdown {
-  position: relative;
-  display: inline-block;   
+input[type=text]:focus {
+	background-color: #fff;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  top:48px;
-  right: 0px;
-  background-color: #f6f6f6;
   min-width: 1rem;
   overflow: auto;
   border: 1.5px solid #b3d7ff;
   z-index: 1;
+  border-radius: 15px;
 }
 
 .dropdown-content a {
@@ -146,10 +154,6 @@ pre{
   display: block;
 }
 
-.searchdropdown a:hover {
-	background-color: #ddd;
-}
-
 .show {
 	display: block;
 }
@@ -157,15 +161,7 @@ pre{
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-
-	.searchdropdown{
-	position: relative;
-	right: 60px;
-	}
-
-	.navbar-toggler{
-	position: absolute;
-	right: 10px;
+	
 }
 }
 
@@ -173,47 +169,20 @@ pre{
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
-	.searchdropdown{
-	position: relative;
-	right: 60px;
-	}
-
-	.navbar-toggler{
-	position: absolute;
-	right: 10px;
 
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-	.searchdropdown{
-	position: relative;
-	}
-
-	.navbar-toggler{
-	position: absolute;
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
-	.searchdropdown{
-	position: relative;
-	}
+} 
 
-	.navbar-toggler{
-	position: absolute;
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-	.searchdropdown{
-	position: relative;
-	}
-
-	.navbar-toggler{
-	position: absolute;
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
 }

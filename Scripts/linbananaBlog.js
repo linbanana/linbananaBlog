@@ -22,6 +22,13 @@ $(window).scroll(function(e) {
 });
 /* navbar scroll functions */
 
+
+/*click navbar-toggler then .dropdown-content hide*/
+$('.navbar-toggler').on('click', function(){
+    $('.dropdown-content').collapse('hide');
+});
+/*click navbar-toggler then .dropdown-content hide*/
+
 /* search */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
