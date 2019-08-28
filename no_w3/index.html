@@ -23,9 +23,9 @@
       <a class="site-title" href="#">巴那那`Blog</a>                
 
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -53,7 +53,7 @@
         </ul>
         <!-- Search Widget --> 
         <div class="searchdropdown">
-        <a href="search.html"><button onclick="myFunction()" class="searchbtn btn-primary"><img src="../svg/search.svg"></button></a>
+          <a href="search.html"><button onclick="myFunction()" class="searchbtn btn-primary"><img src="../svg/search.svg"></button></a>
           <div id="myDropdown" class="dropdown-content">
             <input type="text" placeholder="Search.." id="key-in" oninput="searchFunction()">
             <!-- <a href="#about">About</a> -->
@@ -75,11 +75,11 @@
         <div class="card my-4">
           <div><img class="card-img-myphoto" src="../Image/banana/20190105 korea.jpg" alt="linbanana"></div>
           <div class="sidebar-card-body">
-            <div><h1 class="card-name">巴那那`Blog</h1></div>
-            <div class="author__urls-wrapper">
-              <button class="btn btn--inverse">Follow</button>
-              <ul class="author__urls social-icons">
-
+            <div><h1 class="card-name">linbanana`Blog</h1></div>
+            <div class="linbanana-wrapper">
+              <button class="btn btn-follow" onclick="Followfunction()">Follow</button><ul id="follow" style="display: none;">  
+                <li><a href="mailto:tommy12345689@yahoo.com.tw"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+                <li><a href="https://github.com/linbanana"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
               </ul>
             </div>
           </div>
@@ -203,26 +203,26 @@
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; 2019</p>      
-  </div>
-</footer>
+  <div class="footer">
+      <p class="m-0 text-center text-white">&copy; 2019 linbanana`Blog<br/>Proudly hosted by<a href="https://pages.github.com"> GitHub Pages</a></p>
+    </div>
+  </footer>
 
-<!-- back-to-top -->
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-angle-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+  <!-- back-to-top -->
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-angle-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-<!-- Facebook -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
 
-<!-- 環境建置 -->
-<script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
-<script src="../Scripts/popper.min.js"></script>
-<script src="../Scripts/bootstrap.min.js"></script>
-<script src="../Scripts/linbananaBlog.js"></script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
-<script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
-<!-- 環境建置 -->
+  <!-- 環境建置 -->
+  <script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
+  <script src="../Scripts/popper.min.js"></script>
+  <script src="../Scripts/bootstrap.min.js"></script>
+  <script src="../Scripts/linbananaBlog.js"></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
+  <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+  <!-- 環境建置 -->
 </body>
 </html

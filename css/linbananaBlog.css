@@ -1,5 +1,6 @@
 body{
 	background-color: #ccc;
+  font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
 }
 
 pre{
@@ -85,8 +86,8 @@ pre{
 	align-self:center;
 	font-weight:bold;
 	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .site-title:hover{
@@ -140,12 +141,41 @@ pre{
 
 .card-name{
 	font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
-	font-size: 1em;
+	font-size: 1.5em;
+  margin:10px auto 10px auto;
+  font-weight:bold;
 }
 /*大頭照*/
 
-.sidebar-card-body
-{
+/*follow*/
+.linbanana-wrapper li{
+    margin-bottom: 5px;
+}
+
+.linbanana-wrapper a{
+  color: #000;
+}
+
+.linbanana-wrapper a:hover{
+  color: #007bff;
+}
+
+.btn-follow{
+  background-color: #000;
+  color: #fac;
+  border:3px solid #ffc107;
+}
+
+button.btn.btn-follow:hover{
+  color: #fff;
+}
+
+#follow{
+  margin: 15px auto 15px auto;
+}
+/*follow*/
+
+.sidebar-card-body{
 	flex: 1 1 auto;
     padding: 1.25rem;
 }
@@ -211,6 +241,13 @@ input[type=text]:focus {
 	display: block;
 }
 /*search*/
+
+/*footer*/
+.footer a {
+    color: #fff;
+}
+/*footer*/
+
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {

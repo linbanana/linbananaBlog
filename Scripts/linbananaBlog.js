@@ -60,3 +60,13 @@ function searchFunction() {
   }
 }
 /* search */
+
+
+function Followfunction() {
+  var x = document.getElementById('follow');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
