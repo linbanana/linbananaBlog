@@ -251,10 +251,6 @@ input[type=text]:focus {
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-	
-    .btn-follow{
-      display: block;
-    }
 
     #follow{      
       display: none;
@@ -265,7 +261,7 @@ input[type=text]:focus {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
     .btn-follow{
-      display: block;
+      display: inline;
     }
 
     #follow{      
@@ -282,7 +278,7 @@ input[type=text]:focus {
     }
 
     #follow{
-      display: block;
+      display: inline;
     }
 
 }
@@ -295,7 +291,7 @@ input[type=text]:focus {
     }
 
     #follow{
-      display: block;
+      display: inline;
     }
 } 
 
@@ -307,6 +303,6 @@ input[type=text]:focus {
     }
 
       #follow{
-        display: block;
+        display: inline;
       }
 }
