@@ -12,10 +12,63 @@ pre{
 }
 
 /*Navigation*/
-
 .navbar {
+    background: linear-gradient(15deg, rgba(0,0,0, 1) 0%, rgba(52, 58, 64, 1) 70%);
     transition: top 0.5s ease;
 }
+
+/*取消navbar-toggler border*/
+.navbar-dark .navbar-toggler{
+  border-color: transparent;
+}
+
+/*navbar-toggler x*/
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+
+.navbar-toggler::before {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/*navbar-toggler x*/
 
 .navbar-hide {
     top: -68px;
@@ -38,7 +91,7 @@ pre{
 
 .site-title:hover{
 	text-decoration: none;
-	color: #fff;
+	color: #00e5ff;
 }
 
 .text-purple{
@@ -61,10 +114,6 @@ pre{
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #00d0ff;
 	text-decoration: underline;
-}
-
-.navbar-dark .navbar-toggler{
-  border-color: #fff;
 }
 /*Navigation*/
 
