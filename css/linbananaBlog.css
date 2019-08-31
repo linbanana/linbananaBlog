@@ -5,6 +5,8 @@ body{
 
 pre{
 	background-color: #ccc;
+  overflow-x: auto;
+      font-size: 65%;
 }
 
 /*all card邊框*/
@@ -131,6 +133,16 @@ pre{
 
 /*<-- sidebar -->*/
 
+#sidebar-Categories li li a{
+    display: none;
+}
+
+ul { /*取消ul預設的內縮及樣式*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /*大頭照*/
 .card-img-myphoto{
 	width: 100%;
@@ -251,6 +263,11 @@ input[type=text]:focus {
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+
+  pre{
+    font-size: 50%;
+  }
+}
 
 }
 

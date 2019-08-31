@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- 環境建置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="../../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+  <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../css/linbananaBlog.css" rel="stylesheet" />
+  <!-- 環境建置 -->
+  <!-- 加載Google Google Code Prettify -->
+  <script src="../../Scripts/run_prettify.js"></script>
+  <!-- 加載Google Google Code Prettify -->
+
+  <title>使用Github pages創建自己的Blog吧！ - linbanana`Blog</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container">
+      <a herf="" class="site-logo"><img src="../../Image/菁英巴那那.png"></a>
+      <a class="site-title" href="#">巴那那`Blog</a>                
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">首頁
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="404.html">404</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">社群媒體</a>
+            <div class="dropdown-menu">              
+              <a class="dropdown-item fa fa-facebook-square fa-1g text-primary" href="https://ubin.io/linbanana0803fb">　Facebook</a>
+              <a class="dropdown-item fa fa-youtube-play fa-1g text-danger" href="https://ubin.io/linbananayoutube">　Youtube</a>
+              <a class="dropdown-item fa fa-twitch fa-1g text-purple" href="https://ubin.io/linbananaTwitch">　Twitch</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="dropdown-item addthis_tipjar_inline"></div>
+            </div>
+          </li>         
+        </ul>
+        <!-- Search Widget --> 
+        <div class="searchdropdown">
+          <a href="search.html"><button onclick="myFunction()" class="searchbtn btn-primary"><img src="../svg/search.svg"></button></a>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="key-in" oninput="searchFunction()">
+            <!-- <a href="#about">About</a> -->
+          </div>
+        </div>
+      </div>       
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- 大頭照 -->
+        <div class="card my-4">
+          <div><img class="card-img-myphoto" src="../../Image/banana/20190105 korea.jpg" alt="linbanana"></div>
+          <div class="sidebar-card-body">
+            <div><h1 class="card-name">linbanana`Blog</h1></div>
+            <div class="linbanana-wrapper">
+              <button class="btn btn-follow" onclick="Followfunction()">Follow</button><ul id="follow" style="display: none;">  
+                <li><a href="mailto:tommy12345689@yahoo.com.tw"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+                <li><a href="https://github.com/linbanana"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facebook Widget -->
+        <div class="fb-page my-4" data-href="https://www.facebook.com/linbanana0803/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/linbanana0803/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/linbanana0803/">巴那那</a></blockquote></div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categories</h5>
+          <div class="sidebar-card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">C#</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">Java</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">        
+
+        <!-- Blog Post -->
+        <div class="card mb-4 my-4">         
+          <div class="card-body">
+            <h2 class="card-title">Java利用Scanner查詢99乘法表</h2><br/>
+            <h3 class="card-text">Github：<a href="https://github.com/linbanana/Ican/blob/master/random/src/random/Java99.java">點我</a><br/><br/></h2>
+            <h3 class="card-text">code如下<br/><br/></h2>
+            <h3 class="card-text"><pre><code class="prettyprint">package random;
+
+import java.util.Scanner;
+
+public class Java99 {
+
+public static void main(String[] args) {  
+
+        Scanner input = new Scanner(System.in);
+        int x, y;//記憶輸入
+        String which;//記憶輸入
+
+
+        while (true) {      
+            System.out.println("請輸入選擇查詢方法：" + "1：自訂\t2：數字查詢\t3:99乘法總覽");
+            which = input.nextLine(); 
+
+            if (which.equals("1")) {//自訂數字相乘
+
+                System.out.println("請輸入要相乘的數字");
+                System.out.print("數字:");
+                x = input.nextInt();
+                System.out.print("數字:");
+                y = input.nextInt();
+                System.out.println("相乘結果:" + x * y);
+                break;
+
+            } else if (which.equals("2")) {//輸入n則列出n的乘法表
+
+                System.out.println("請輸入數字查詢");
+                x = input.nextInt();
+                for (int i = 1; i <= 9; i++) {
+                System.out.println(x + "*" + i + "=" + i * x);
+            }
+            break;
+
+            } else if (which.equals("3")) {//99乘法表
+        
+                for (int i = 1; i <= 9; i++) {
+                  for (int j = 1; j <= 9; j++) {
+                  System.out.printf("%d*%d=%d\t", j, i, i * j);
+                  }
+                System.out.println();
+                }
+                break;
+
+            } else {//例外處理        
+                System.out.println("Error：請輸入正確選項");        
+            }
+          }
+  }
+
+}</code></pre></h3>          
+<br/><br/>
+</div>
+<div class="card-footer text-muted fa fa-calendar">
+  2019/08/31 by
+  <a href="#">巴那那</a>
+  <div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+</div>
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+
+<script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://linbanana.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>        
+
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+            <a class="page-link" href="../index.html">&laquo;</a>
+          </li>              
+          <li class="page-item disabled">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="../article/HTML cut_layouts.html">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="../article/HTML cut_layouts.html">&raquo;</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="footer">
+      <p class="m-0 text-center text-white">&copy; 2019 linbanana`Blog<br/>Proudly hosted by<a href="https://pages.github.com"> GitHub Pages</a></p>
+    </div>
+  </footer>
+
+  <!-- back-to-top -->
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top fa fa-angle-up" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+
+  <!-- 環境建置 -->
+  <script src="../../Scripts/jquery-3.4.1.slim.min.js"></script>
+  <script src="../../Scripts/popper.min.js"></script>
+  <script src="../../Scripts/bootstrap.min.js"></script>
+  <script src="../../Scripts/linbananaBlog.js"></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
+  <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+  <!-- 環境建置 -->
+</body>
+</html
