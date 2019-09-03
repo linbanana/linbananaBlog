@@ -133,63 +133,13 @@
         <!-- Blog Post -->
         <div class="card mb-4 my-4">         
           <div class="card-body">
-            <h2 class="card-title">Java利用Scanner查詢99乘法表</h2><br/>
-            <h3 class="card-text">Github：<a href="https://github.com/linbanana/Ican/blob/master/random/src/random/Java99.java">點我</a><br/><br/></h3>
-            <h3 class="card-text">code如下<br/><br/></h3>
-            <h3 class="card-text"><pre><code class="prettyprint">package random;
+            <h2 class="card-title">Minimem 記憶體最佳化管理工具</h2><br/>
+            <h3 class="=card-text">Minimem 是一個能夠有效降低「由使用者指定」的程式記憶體用量的工具。這個工具一開始是被設計用來解決 Firefox 的 memory leaks 問題，但是後來作者決定改善 Minimem 讓它現在可以對任何應用程式產生降低記憶體用量的效果。</h3><br/>
+            <h4 class="card-text"><strong>軟體名稱：</strong>Minimem</h4><br/>
+            <h4 class="card-text"><strong>軟體版本：</strong>2.1.1</h4><br/>
+            <h4 class="card-text"><strong>軟體下載：</strong><a href="http://main.kerkia.com/Products/Minimem/Minimem2.1.msi">按我下載</a></h4><br/>                     
+                      
 
-import java.util.Scanner;
-
-public class Java99 {
-
-public static void main(String[] args) {  
-
-        Scanner input = new Scanner(System.in);
-        int x, y;//記憶輸入
-        String which;//記憶輸入
-
-
-        while (true) {      
-            System.out.println("請輸入選擇查詢方法：" + "1：自訂\t2：數字查詢\t3:99乘法總覽");
-            which = input.nextLine(); 
-
-            if (which.equals("1")) {//自訂數字相乘
-
-                System.out.println("請輸入要相乘的數字");
-                System.out.print("數字:");
-                x = input.nextInt();
-                System.out.print("數字:");
-                y = input.nextInt();
-                System.out.println("相乘結果:" + x * y);
-                break;
-
-            } else if (which.equals("2")) {//輸入n則列出n的乘法表
-
-                System.out.println("請輸入數字查詢");
-                x = input.nextInt();
-                for (int i = 1; i <= 9; i++) {
-                System.out.println(x + "*" + i + "=" + i * x);
-            }
-            break;
-
-            } else if (which.equals("3")) {//99乘法表
-        
-                for (int i = 1; i <= 9; i++) {
-                  for (int j = 1; j <= 9; j++) {
-                  System.out.printf("%d*%d=%d\t", j, i, i * j);
-                  }
-                System.out.println();
-                }
-                break;
-
-            } else {//例外處理        
-                System.out.println("Error：請輸入正確選項");        
-            }
-          }
-  }
-
-}</code></pre></h3>          
-<br/><br/>
 </div>
 <div class="card-footer text-muted fa fa-calendar">
   2019/08/31 by
@@ -226,7 +176,7 @@ public static void main(String[] args) {
      <!-- Pagination -->
      <ul class="pagination justify-content-center mb-4">
       <li class="page-item">
-        <a class="page-link" href="../article/HTML cut.html">&laquo;</a>
+        <a class="page-link" href="../article/Fibonacci.html">&laquo;</a>
       </li>          
       <li class="page-item">
         <a class="page-link" href="../article/Github pages.html">1</a>
@@ -234,17 +184,17 @@ public static void main(String[] args) {
       <li class="page-item">
         <a class="page-link" href="../article/HTML cut.html">2</a>
       </li>
-      <li class="page-item disabled">
+      <li class="page-item">
         <a class="page-link" href="../article/Java99.html">3</a>
       </li>
       <li class="page-item">
         <a class="page-link" href="../article/Fibonacci.html">4</a>
       </li>
-      <li class="page-item">
+      <li class="page-item disabled">
         <a class="page-link" href="../article/Random.html">5</a>
       </li>
-      <li class="page-item ">
-        <a class="page-link" href="../article/Fibonacci.html">&raquo;</a>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">&raquo;</a>
       </li>
     </ul>
 
