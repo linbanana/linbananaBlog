@@ -60,7 +60,7 @@ function searchFunction() {
 }
 /* search */
 
-
+/* Follow */
 function Followfunction() {
   var x = document.getElementById('follow');
   if (x.style.display === 'none') {
@@ -69,3 +69,4 @@ function Followfunction() {
     x.style.display = 'none';
   }
 }
+/* Follow */
