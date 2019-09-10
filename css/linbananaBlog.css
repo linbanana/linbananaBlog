@@ -4,7 +4,7 @@ body{
 }
 
 pre{
-	background-color: #ccc;
+	background-color: rgba(204,204,204,0.6);
   overflow-x: auto;
   font-size: 65%;
 }
