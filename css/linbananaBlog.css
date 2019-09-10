@@ -127,13 +127,13 @@ pre{
 .card-title{
   text-decoration: underline;
   color: #000;
-  background-color: rgba(255, 255, 255,0.3);
+  background-color: rgba(204, 204, 204,0.3);
 }
 
 .card-body{
 	background-color: #f5e1d8;
 	border-bottom: 1.5px solid #ffd4aa;
-  background-image: url(https://unsplash.it/727/128);  
+  background-image: url(https://unsplash.it/727/128/?blur=3);
 }
 
 .card-p{
@@ -141,6 +141,11 @@ pre{
   font-size: 1.5rem;
   color: #fff;
   padding-left: 10px;
+}
+
+.card-text,.h1,.h2,.h3,.h4 {
+  color: #000;
+  background-color: rgba(245, 225, 216,0.7);
 }
 /*container*/
 
