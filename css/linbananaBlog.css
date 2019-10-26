@@ -163,12 +163,71 @@ ul { /*取消ul預設的內縮及樣式*/
 }
 
 /*大頭照*/
-.card-img-myphoto{
+.card-img-myphoto-top{
 	  width: 100%;
     height: 462px;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     border-radius: 50%;
+}
+
+.card-img-myphoto-bottom{
+    width: 100%;
+    height: 462px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 50%;
+
+}
+
+#myimgloop{
+  position: relative;
+  width: 100%;
+  height: 462px;
+  margin: 0 auto;
+}
+
+#myimgloop img{
+  position: absolute;
+  left: 0;
+}
+
+#myimgloop img.card-img-myphoto-bottom{
+  animation-name: imgloop;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  -webkit-animation-name: imgloop;/*Safari and Google Chrome*/
+  -webkit-animation-timing-function: ease-in-out;/*Safari and Google Chrome*/
+  -webkit-animation-iteration-count: infinite;/*Safari and Google Chrome*/
+  -webkit-animation-duration: 5s;/*Safari and Google Chrome*/
+  -webkit-animation-direction: alternate;/*Safari and Google Chrome*/
+  -moz-animation-name: imgloop;/*firefox*/
+  -moz-animation-timing-function: ease-in-out;/*firefox*/
+  -moz-animation-iteration-count: infinite;/*firefox*/
+  -moz-animation-duration: 5s;/*firefox*/
+  -moz-animation-direction: alternate;/*firefox*/
+  -o-animation-name: imgloop;/*Opera*/
+  -o-animation-timing-function: ease-in-out;/*Opera*/
+  -o-animation-iteration-count: infinite;/*Opera*/
+  -o-animation-duration: 5s;/*Opera*/
+  -o-animation-direction: alternate;/*Opera*/
+}
+
+@keyframes imgloop{
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  50%{
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
 }
 
 .card-name{
