@@ -71,7 +71,7 @@ function Followfunction() {
 }
 /* Follow */
 
-/*js圖片輪播，因w3引入方式無法使用暫時註解*/
+/*js圖片輪播，因w3引入方式無法使用暫時註解
 $(document).ready(function(){
   // Activate Carousel
   $("#myCarousel").carousel();
@@ -92,4 +92,4 @@ $(document).ready(function(){
     $("#myCarousel").carousel("next");
   });
 });
-/*js圖片輪播，因w3引入方式無法使用暫時註解*/
+js圖片輪播，因github server有時無法運作暫時註解*/
