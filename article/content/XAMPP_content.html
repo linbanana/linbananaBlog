@@ -1,0 +1,26 @@
+<!-- Blog Post -->
+<div class="card mb-4 my-4">
+<div class="card-body">
+<h2 class="card-title">How to allow XAMPP Apache listening to multiple network ports?</h2><br/>
+修改httd.conf，假設現在要新增port8000
+<pre>
+	<code>
+		Listen 80
+		Listen 8000
+
+		&ltVirtualHost *:8000&gt
+			&emsp;ServerAdmin postmaster@localhost
+			&emsp;DocumentRoot "C:\Users\"
+			&emsp;ServerName localhost:8000
+			&emsp;ErrorLog "logs/error.log"
+			&emsp;CustomLog "logs/access.log" combined
+		&lt/VirtualHost&gt
+	</code>
+</pre>
+</div>
+
+<div class="card-footer text-muted fa fa-calendar">
+2019/12/29 by
+<a href="#">巴那那</a>
+<div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+</div>
