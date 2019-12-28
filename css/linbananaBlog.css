@@ -10,7 +10,7 @@ pre{
 }
 
 /* FB */
-.fb_iframe_widget {    
+.fb_iframe_widget {
     outline: 1px solid #dc3545;
 }
 
@@ -119,7 +119,7 @@ pre{
 
 .navbar-dark .navbar-nav .nav-link{
 	color: #fff;
-	font-size: 1.5rem;	
+	font-size: 1.5rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -138,12 +138,12 @@ pre{
 .card-body{
   background-color: #f5e1d8;
   border-bottom: 1.5px solid #ffd4aa;
-  background-image: url(https://unsplash.it/727/1000/?blur=3);
+  background-image: url(https://i.picsum.photos/id/313/727/1000.jpg?blur=3);
   background-position: center;
 }
 
 .card-p{
-  background-color: #0099ff; 
+  background-color: #0099ff;
   font-size: 1.5rem;
   color: #fff;
   padding-left: 10px;
@@ -370,7 +370,7 @@ input[type=text]:focus {
   pre{
     overflow-x: auto;
   }
-  
+
   #sidebar{
     height: 100%; // experiment with this value, try changing to 110vh
     position: -webkit-sticky;
@@ -380,7 +380,7 @@ input[type=text]:focus {
 }
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
   pre{
     overflow-x: auto;
@@ -392,7 +392,7 @@ input[type=text]:focus {
     position: sticky;
     top: 5%;
   }
-} 
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
