@@ -9,6 +9,11 @@ pre{
   font-size: 65%;
 }
 
+/* FB */
+.fb_iframe_widget {    
+    outline: 1px solid #dc3545;
+}
+
 /*all card邊框*/
 .card{
 	border: 1.5px solid #ffd4aa;
