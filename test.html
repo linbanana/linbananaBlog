@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- w3 js -->
+	<script src="Scripts/w3.js"></script>
+	<!-- w3 js -->
+
+	<!-- Navigation --> 
+	<div w3-include-html="header.html"></div>
+</head>
+
+<body>
+
+	<!-- Navigation --> 
+	<div w3-include-html="layouts/navbar.html"></div>
+
+
+	<!-- Page Content -->
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Sidebar Widgets Column -->
+			<div class="col-md-4" id="sidebar">
+
+				<div w3-include-html="layouts/sidebar.html"></div>       
+
+			</div>
+
+			<!-- Blog Entries Column -->
+			<div class="col-md-8">
+
+				<div id="filterBtn">
+					<a href="javascript:void(0);" class="allItem">ALL</a>
+					<a href="javascript:void(0);" class="HTML">HTML</a>
+					<a href="javascript:void(0);" class="Java">Java</a>
+					<a href="javascript:void(0);" class="bat">bat</a>
+					<a href="javascript:void(0);" class="software">software</a>
+				</div>
+
+				<div id="filterList">
+					<ul>
+						<li class="no">
+							<!-- Blog Post -->
+							<div class="card mb-4 my-4">
+								<img class="card-img-top" src="" alt="Card image cap">
+								<div class="card-body">
+									<h2 class="card-title">網站持續更新中..</h2>
+									<a href="#" class="btn btn-primary">看更多 &rarr;</a>
+								</div>
+								<div class="card-footer text-muted">
+									by
+									<a href="#">巴那那</a>
+								</div>
+							</div>
+						</li>
+						<li class="no">
+							<!-- Blog Post -->
+							<div class="card mb-4">       
+								<div class="card-body">
+									<h2 class="card-title">使用Github pages創建自己的Blog吧！</h2>
+									<a href="article/Github pages_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
+								</div>
+								<div class="card-footer text-muted fa fa-calendar">
+									2019/08/24 by
+									<a href="#">巴那那</a>
+								</div>
+							</div>
+						</li>
+						<li class="HTML">
+							<!-- Blog Post -->
+							<div class="card mb-4">       
+								<div class="card-body">
+									<h2 class="card-title">將HTML切割引用至其他分頁上</h2>
+									<a href="article/HTML cut_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
+								</div>
+								<div class="card-footer text-muted fa fa-calendar">
+									2019/08/26 by
+									<a href="#">巴那那</a>
+								</div>
+							</div>
+						</li>
+						<li class="Java">
+							<!-- Blog Post -->
+							<div class="card mb-4">       
+								<div class="card-body">
+									<h2 class="card-title">Java利用Scanner查詢99乘法表</h2>
+									<a href="article/Java99_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
+								</div>
+								<div class="card-footer text-muted fa fa-calendar">
+									2019/08/31 by
+									<a href="#">巴那那</a>
+								</div>
+							</div>
+						</li>
+						<li class="Java">
+							<!-- Blog Post -->
+							<div class="card mb-4">       
+								<div class="card-body">
+									<h2 class="card-title">Java利用Scanner查詢費式數列</h2>
+									<a href="article/Fibonacci_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
+								</div>
+								<div class="card-footer text-muted fa fa-calendar">
+									2019/08/31 by
+									<a href="#">巴那那</a>
+								</div>
+							</div>
+						</li>
+						<li class="Java">
+							<!-- Blog Post -->
+							<div class="card mb-4">       
+								<div class="card-body">
+									<h2 class="card-title">Java利用Scanner自訂範圍抽籤</h2>
+									<a href="article/Random_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
+								</div>
+								<div class="card-footer text-muted fa fa-calendar">
+									2019/09/03 by
+									<a href="#">巴那那</a>
+								</div>
+							</div>
+						</li>
+						<li class="bat">
+							      <!-- Blog Post -->
+      <div class="card mb-4">       
+        <div class="card-body">
+          <h2 class="card-title">利用批次檔製作網路診斷工具！</h2>
+          <a href="article/Network-diagnostics_bat_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
+        </div>
+        <div class="card-footer text-muted fa fa-calendar">
+          2019/09/03 by
+          <a href="#">巴那那</a>
+        </div>
+      </div>
+						</li>
+						<li class="view"><img src="img/view2.jpg" alt=""></li>
+						<li class="cats"><img src="img/cats4.jpg" alt=""></li>
+						<li class="food"><img src="img/food4.jpg" alt=""></li>
+						<li class="cats"><img src="img/cats5.jpg" alt=""></li>
+						<li class="view"><img src="img/view3.jpg" alt=""></li>
+						<li class="cats"><img src="img/cats6.jpg" alt=""></li>
+						<li class="food"><img src="img/food5.jpg" alt=""></li>
+						<li class="view"><img src="img/view4.jpg" alt=""></li>
+					</ul>
+				</div>
+
+
+			</div>
+
+		</div>
+		<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+	<div w3-include-html="layouts/footer.html"></div>
+
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+
+	<!-- 環境建置 -->
+	<script src="Scripts/jquery-3.4.1.slim.min.js"></script>  
+	<script src="Scripts/jquery-1.11.3.min.js"></script>
+	<script src="Scripts/popper.min.js"></script>
+	<script src="Scripts/bootstrap.min.js"></script>
+	<script src="Scripts/linbananaBlog.js"></script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
+	<script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+	<!-- 環境建置 -->
+
+	<!-- w3 js -->
+	<script>w3.includeHTML();</script>
+	<!-- w3 js -->
+</body>
+</html>

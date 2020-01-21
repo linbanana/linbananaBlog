@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/* ------------------------------
+   DESIGN/LAYOUT ELEMENTS
+------------------------------ */
+a:link,a:visited,a:active,a:hover { text-decoration: none; color: #000;}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 60px 0;
+	width: 800px;
+	text-align: center;
+}
+
+/* ------------------------------
+   CHAPTER ELEMENTS
+------------------------------ */
+#filterBtn {
+	padding-bottom: 30px;
+}
+
+#filterBtn a {
+	margin: 0 10px;
+	padding: 5px 30px;
+	background: #fff;
+	background: linear-gradient(to bottom,  #fff 40%,#ddd 100%);
+	border: #ddd 1px solid;
+	border-radius: 30px;
+}
+
+#filterBtn a:hover {
+	background: #fff;
+}
+
+#filterBtn a.active {
+	color: #ff0000;
+	font-weight: bold;
+	background: #fff;
+}
+
+#filterList ul {
+	margin: 0 auto;
+	width: 800px;
+	text-align: center;
+}
+
+#filterList ul li {
+	margin: 5px;
+	width: 150px;
+	float: left;
+}
+
+#filterList ul li img {
+	width: 150px;
+}
+
+/* ------------------------------
+   CLEARFIX ELEMENTS
+------------------------------ */
+#filterList ul:before,
+#filterList ul:after {
+	content: " ";
+	display: table;
+}
+#filterList ul:after {clear: both;}
+#filterList ul {*zoom: 1;}
+
