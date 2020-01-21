@@ -10,7 +10,7 @@ pre{
 }
 
 #filterBtn {
-  height: 100px;
+  height: auto;
 }
 
 #filterBtn a {
@@ -31,6 +31,10 @@ pre{
   color: #ff0000;
   font-weight: bold;
   background: #fff;
+}
+
+#filterList{
+  float: left;
 }
 
 #filterList ul {
