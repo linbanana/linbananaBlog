@@ -177,6 +177,8 @@ pre{
   border-bottom: 1.5px solid #ffd4aa;
   background-image: url(https://i.picsum.photos/id/313/727/1000.jpg?blur=3);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-p{
