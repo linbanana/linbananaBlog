@@ -24,14 +24,14 @@
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4" id="sidebar">
 
-      <div w3-include-html="layouts/sidebar.html"></div>  
+        <div w3-include-html="layouts/sidebar.html"></div>  
 
       </div>
 
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-      <div w3-include-html="layouts/pages/about pages.html"></div>  
+        <div w3-include-html="layouts/pages/about pages.html"></div>  
 
       </div>      
 
@@ -44,15 +44,23 @@
   <!-- Footer -->
   <div w3-include-html="layouts/footer.html"></div>
 
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
 
-    <!-- body -->
-    <div w3-include-html="body.html"></div>
-    
-    <!-- w3 js -->
-    <script>w3.includeHTML();</script>
-    <!-- w3 js -->
+  <!-- 環境建置 -->
+  <script src="Scripts/jquery-3.4.1.slim.min.js"></script>  
+  <script src="Scripts/jquery-1.11.3.min.js"></script>
+  <script src="Scripts/popper.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts/linbananaBlog.js"></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90"></script>
+  <script id="dsq-count-scr" src="//linbanana.disqus.com/count.js" async></script>
+  <!-- 環境建置 -->
+  
+  <!-- w3 js -->
+  <script>w3.includeHTML();</script>
+  <!-- w3 js -->
 </body>
 </html
