@@ -10,10 +10,7 @@ pre{
 }
 
 #footer {
-    /* 設定footer絕對位置在底部 */
     clear: both;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
