@@ -17,3 +17,5 @@ Minimem.html>7<
 Revo%20Uninstaller.html>8<
 
 XAMPP.html>9<
+
+DesktopOK.html
