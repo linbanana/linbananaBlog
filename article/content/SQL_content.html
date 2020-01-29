@@ -1,0 +1,47 @@
+<!-- Blog Post -->
+<div class="card mb-4 my-4">         
+<div class="card-body">
+<h2 class="card-title">Java利用Scanner查詢99乘法表</h2><br/>
+<h3 class="card-text">1.新增使用者帳號<br/></h3>
+<h3 class="card-text"><pre><code class="prettyprint">
+CREATE USER 'XXX'@'localhost' IDENTIFIED BY 'XXX';
+
+2.將xxxx帳號設定為ALL PRIVILEGES
+GRANT ALL PRIVILEGES on *.* to 'xxxx'@'localhost'
+
+3.建立list table
+CREATE TABLE list(
+
+`list_id` int(10) NOT NULL PRIMARY key AUTO_INCREMENT,
+`list_detail` varchar(10) NOT NULL,
+`list_date` datetime
+);
+
+4.ENUM合併使用
+CREATE TABLE list2(
+
+`list_id` int(10) NOT NULL PRIMARY key AUTO_INCREMENT,
+`list_detail` varchar(10) NOT NULL,
+`list_date` datetime NOT NULL,
+`list_chk` ENUM('M','F','N') DEFAULT 'N'
+);
+
+5.修改table結構
+ALTER TABLE `list` CHANGE `list_detail` `list_de` varchar(10)
+
+6.增加新欄位
+ALTER TABLE `list` add `list_gender` ENUM('M','F','N') NULL
+
+7.延伸5的修正
+ALTER table `list` CHANGE `list_de`  `list_de` varchar(10) not null
+
+8.刪除資料表欄位
+alter TABLE `list` DROP `list_gender`
+</code></pre></h3>
+<br/><br/>
+</div>
+<div class="card-footer text-muted fa fa-calendar">
+  2019/08/31 by
+  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
+  <div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+</div>
