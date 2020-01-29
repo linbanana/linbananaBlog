@@ -6,75 +6,62 @@
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          CREATE USER 'XXX'@'localhost' IDENTIFIED BY 'XXX';
+          CREATE USER '使用者帳號'@'localhost' IDENTIFIED BY '使用者密碼';
         </code>
       </pre>
     </h3>
-    <h3 class="card-text">2.將xxxx帳號設定為ALL PRIVILEGES<br/></h3>
+    <h3 class="card-text">2.將使用者帳號設定為ALL PRIVILEGES<br/></h3>
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          GRANT ALL PRIVILEGES on *.* to 'xxxx'@'localhost';
+          GRANT ALL PRIVILEGES on *.* to '使用者帳號'@'localhost';
         </code>
       </pre>
     </h3>
-    <h3 class="card-text">3.建立list table<br/></h3>
+    <h3 class="card-text">3.建立資料庫<br/></h3>
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          CREATE TABLE list(
-
-          `list_id` int(10) NOT NULL PRIMARY key AUTO_INCREMENT,
-          `list_detail` varchar(10) NOT NULL,
-          `list_date` datetime
-
-          );
+          CREATE DATABASE `資料庫名稱`
         </code>
       </pre>
     </h3>
-    <h3 class="card-text">4.ENUM合併使用<br/></h3>
+    <h3 class="card-text">4.建立資料表<br/></h3>
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          CREATE TABLE list2(
-
-          `list_id` int(10) NOT NULL PRIMARY key AUTO_INCREMENT,
-          `list_detail` varchar(10) NOT NULL,
-          `list_date` datetime NOT NULL,
-          `list_chk` ENUM('M','F','N') DEFAULT 'N'
-
-          );
+          CREATE TABLE `資料庫名稱`.`資料表名稱` (
+          `欄位名稱` int(10) NOT NULL PRIMARY key AUTO_INCREMENT,
+          `欄位名稱` varchar(10) NOT NULL,
+          `欄位名稱` datetime
+          ) ENGINE = InnoDB;
         </code>
       </pre>
     </h3>
-    <h3 class="card-text">5.修改table結構<br/></h3>
+    <h3 class="card-text">5.增加欄位、ENUM使用<br/></h3>
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          ALTER TABLE `list` CHANGE `list_detail` `list_de` varchar(10);
+          ALTER TABLE `資料表名稱` ADD `欄位名稱` ENUM('M','F','N','') NOT NULL DEFAULT 'N';
         </code>
       </pre>
     </h3>
-    <h3 class="card-text">6.增加新欄位<br/></h3>
+    <h3 class="card-text">6.修改資料表結構<br/></h3>
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          ALTER TABLE `list` add `list_gender` ENUM('M','F','N') NULL;
+          ALTER TABLE `資料表名稱` CHANGE `舊欄位名稱` `新欄位名稱` varchar(10);
         </code>
       </pre>
     </h3>
-        <h3 class="card-text">7.延伸5的修正<br/></h3>
+    <h3 class="card-text">7.刪除資料表欄位<br/></h3>
     <h3 class="card-text">
       <pre>
         <code class="prettyprint">
-          ALTER table `list` CHANGE `list_de`  `list_de` varchar(10) not null;
+          ALTER TABLE `資料表名稱` DROP `欄位名稱`
         </code>
       </pre>
     </h3>
-
-    8.刪除資料表欄位
-    alter TABLE `list` DROP `list_gender`
-
     <br/><br/>
   </div>
   <div class="card-footer text-muted fa fa-calendar">
