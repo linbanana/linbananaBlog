@@ -100,20 +100,19 @@ window.onload = function(){
   }
   /* search */
 
-  /* Follow */
-  function Followfunction() {
-    var x = document.getElementById('follow');
-    if (x.style.display === 'none') {
-      x.style.display = 'block';
-    } else {
-      x.style.display = 'none';
-    }
-  }
-  /* Follow */
-
   /* footer */
   var d = new Date();
   document.getElementById("date").innerText = d.getFullYear();
   /* footer */
 };
 
+/* Follow */
+function Followfunction() {
+  var x = document.getElementById('follow');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+/* Follow */
