@@ -1,40 +1,41 @@
 <!-- Blog Post -->
-<div class="card mb-4 my-4">         
-<div class="card-body">
-<h2 class="card-title">Java利用Scanner查詢費式數列</h2><br/>
-<h3 class="card-text">Github：<a href="https://github.com/linbanana/Ican/blob/master/random/src/random/Fibonacci.java">點我</a><br/><br/></h3>
-<h3 class="card-text">code如下<br/></h3>
-<h3 class="card-text"><pre><code class="prettyprint">package random;
+<div class="card mb-4 my-4">
+  <div class="card-body">
+    <h2 class="card-title">Java利用Scanner查詢費式數列</h2><br/>
+    <h3 class="card-text">Github：<a href="https://github.com/linbanana/Ican/blob/master/random/src/random/Fibonacci.java">點我</a><br/><br/></h3>
+    <h3 class="card-text">code如下<br/></h3>
+    <h3 class="card-text"><pre><code class="prettyprint">package random;
 
-import java.util.Scanner;
+      import java.util.Scanner;
 
-public class Fibonacci {
+      public class Fibonacci {
 
-  public static void main(String[] args) {
-    // TODO 自動產生的方法 Stub
-    Scanner input = new Scanner(System.in);
+      public static void main(String[] args) {
+      // TODO 自動產生的方法 Stub
+      Scanner input = new Scanner(System.in);
 
-    int num1 = 0, num2 = 1, num3;
-    System.out.print("請輸入您要顯示的費氏數列總數：");
-    int count = input.nextInt();//費氏數列總數
+      int num1 = 0, num2 = 1, num3;
+      System.out.print("請輸入您要顯示的費氏數列總數：");
+      int count = input.nextInt();//費氏數列總數
 
-    System.out.print(num1 + " " + num2);
+      System.out.print(num1 + " " + num2);
 
-    for (int i = 2; i < count; ++i)//已有"0"和"1"，所以"i"從"2"開始
-    {
-      num3 = num1 + num2;
-      System.out.print(" " + num3);
-      num1 = num2;
-      num2 = num3;
+      for (int i = 2; i < count; ++i)//已有"0"和"1"，所以"i"從"2"開始
+      {
+        num3 = num1 + num2;
+        System.out.print(" " + num3);
+        num1 = num2;
+        num2 = num3;
+      }
+
     }
 
-  }
-
-}</code></pre></h3>          
-<br/><br/>
+  }</code></pre></h3>
+  <br/><br/>
 </div>
 <div class="card-footer text-muted fa fa-calendar">
   2019/08/31 by
   <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-  <div class="fb-share-button" data-href="https://linbanana.github.io/linbananaBlog/article/Github%20pages.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+  <span class="badge badge-pill badge-primary float-right">Java</span>
+</div>
 </div>
