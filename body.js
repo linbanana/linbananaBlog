@@ -1,4 +1,4 @@
-function include(file) {
+window.οnlοad=function(){function include(file) {
 
   var script  = document.createElement('script');
   script.src  = file;
@@ -17,3 +17,4 @@ include('\\linbananaBlog/Scripts/bootstrap.min.js');
 include('\\linbananaBlog/Scripts/linbananaBlog.js');
 include('//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90');
 include('//linbanana.disqus.com/count.js');
+}
