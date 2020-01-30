@@ -6,55 +6,81 @@
     <h3 class="card-text">code如下<br/></h3>
     <h3 class="card-text"><pre><code class="prettyprint">package random;
 
-      import java.util.Scanner;
+import java.util.*;
 
-      public class Java99 {
+public class Random {
 
-      public static void main(String[] args) {  
+    public static void main(String[] args) {
+        ArrayList < Integer > numbers = new ArrayList < Integer > (); // 泛型
+        int count, minnum, maxnum;
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+        int which; // 記憶輸入
 
-      Scanner input = new Scanner(System.in);
-      int x, y;//記憶輸入
-      String which;//記憶輸入
+        System.out.println("請問您要抽幾次不同的幸運數字?");
+        count = input.nextInt();
+        System.out.println("設定數字範圍，最小數字與最大數字");
+        System.out.println("最小數字是多少呢?");
+        minnum = input.nextInt();
+        System.out.println("最大數字是多少呢?");
+        maxnum = input.nextInt();
 
+        if (maxnum - minnum + 1 >= count) {
+            System.out.println("請輸入選擇查詢方法：" + "1:Random　2:ArrayList"); // Random有bug..
+            which = input.nextInt();
 
-      while (true) {      
-      System.out.println("請輸入選擇查詢方法：" + "1：自訂\t2：數字查詢\t3:99乘法總覽");
-      which = input.nextLine(); 
+            if (which == 1) {
+                try {
+                    for (int i = 0; i <= maxnum - minnum; i++)
+                        numbers.add(minnum + i);
 
-      if (which.equals("1")) {//自訂數字相乘
+                    int[] result = new int[count];
+                    for (int i = 0; i < result.length; i++) {
 
-      System.out.println("請輸入要相乘的數字");
-      System.out.print("數字:");
-      x = input.nextInt();
-      System.out.print("數字:");
-      y = input.nextInt();
-      System.out.println("相乘結果:" + x * y);
-      break;
+                        int index = (int)(Math.random() * (maxnum - minnum + 1)) + minnum; //Random
+                        result[i] = index;
+                        numbers.remove(new Integer(index));
 
-    } else if (which.equals("2")) {//輸入n則列出n的乘法表
+                    }
 
-    System.out.println("請輸入數字查詢");
-    x = input.nextInt();
-    for (int i = 1; i <= 9; i++) {
-    System.out.println(x + "*" + i + "=" + i * x);
-  }
-  break;
+                    Arrays.sort(result); //排序
+                    System.out.println("Lucky numbers: ");
+                    for (int i: result) {
+                        System.out.print(i + " ");
+                    }
 
-} else if (which.equals("3")) {//99乘法表
+                } catch (Exception e) {
+                    e.toString();
 
-for (int i = 1; i <= 9; i++) {
-for (int j = 1; j <= 9; j++) {
-System.out.printf("%d*%d=%d\t", j, i, i * j);
-}
-System.out.println();
-}
-break;
+                }
+            } else if (which == 2) { //ArrayList
 
-} else {//例外處理        
-System.out.println("Error：請輸入正確選項");        
-}
-}
-}
+                for (int i = 0; i <= maxnum - minnum; i++)
+                    numbers.add(minnum + i);
+
+                int index[] = new int[count];
+                Collections.shuffle(numbers); //隨機排序
+                System.out.println("Lucky numbers: ");
+
+                for (int i = 0; i < count; i++) {
+                    index[i] = numbers.get(i);
+                    System.out.print(index[i] + " ");
+                }
+
+            } else {
+                System.out.println("請輸入正確選項");
+            }
+
+        } else {
+            System.out.print("最小值+最大值應大於等於抽取次數");
+        }
+
+        System.exit(0); //JVM錯誤排除
+    }
+
+    private int nextInt(int minnum, int maxnum) {
+        return 0;
+    }
 
 }</code></pre></h3>          
 <br/><br/>
