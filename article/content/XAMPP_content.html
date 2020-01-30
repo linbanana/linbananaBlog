@@ -3,9 +3,7 @@
 	<div class="card-body">
 		<h2 class="card-title">How to allow XAMPP Apache listening to multiple network ports?</h2><br/>
 		修改httd.conf，假設現在要新增port8000
-		<pre>
-			<code>
-				Listen 80
+		<pre><code>Listen 80
 				Listen 8000
 
 				&ltVirtualHost *:8000&gt
@@ -14,8 +12,7 @@
 				&emsp;ServerName localhost:8000
 				&emsp;ErrorLog "logs/error.log"
 				&emsp;CustomLog "logs/access.log" combined
-				&lt/VirtualHost&gt
-			</code>
+				&lt;/VirtualHost&gt;</code>
 		</pre>
 	</div>
 
