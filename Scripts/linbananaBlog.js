@@ -1,6 +1,6 @@
 /* footer */
 var d = new Date();
-document.getElementById("footer").innerText = d.getFullYear();
+document.getElementById("date").innerText = d.getFullYear();
 /* footer */
 
 /* filterBtn */
