@@ -1,4 +1,4 @@
-/* */
+/* filterBtn */
 
 $(function(){
   var setFilter = $('#filterBtn'),
@@ -36,7 +36,7 @@ $(function(){
   });
 
 });
-/* */
+/* filterBtn */
 
 /*facebook*/
 (function(d, s, id) {
