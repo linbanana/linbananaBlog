@@ -1,6 +1,6 @@
 /* footer */
 var d = new Date();
-document.getElementById("footer").innerHTML = '<footer class="py-5 bg-dark" id="footer"><p class="m-0 text-center text-white">copyright &copy; 2019-'+d.getFullYear()+' linbanana`Blog<br/>Proudly hosted by <a href="https://pages.github.com">GitHub Pages</a></p></footer>';
+document.getElementById("footer").innerHTML = d.getFullYear();
 /* footer */
 
 /* filterBtn */
