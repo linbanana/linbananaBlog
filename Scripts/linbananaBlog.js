@@ -1,3 +1,4 @@
+window.onload = function(){
 /* filterBtn */
 $(function(){
   var setFilter = $('#filterBtn'),
@@ -114,5 +115,5 @@ function Followfunction() {
 var d = new Date();
 document.getElementById("date").innerText = d.getFullYear();
 /* footer */
-
+};
 
