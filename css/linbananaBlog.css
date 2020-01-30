@@ -305,6 +305,10 @@ button.btn.btn-follow:hover{
   color: #fff;
 }
 
+button.btn.btn-follow:active{
+  color: #fff;
+}
+
 #follow{
   margin: 15px auto 15px auto;
 }
