@@ -388,7 +388,8 @@ input[type=text]:focus {
 
   pre{
     font-size: 50%;
-    overflow-x: scroll;
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
   }
 }
 
@@ -398,7 +399,8 @@ input[type=text]:focus {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
   pre{
-    overflow-x: scroll;
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
   }
 }
 
@@ -406,7 +408,8 @@ input[type=text]:focus {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   pre{
-    overflow-x: scroll;
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
   }
 
   #sidebar{
@@ -421,7 +424,8 @@ input[type=text]:focus {
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
   pre{
-    overflow-x: auto;
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
   }
 
   #sidebar{
@@ -436,7 +440,8 @@ input[type=text]:focus {
 @media (min-width: 1200px) {
 
   pre{
-    overflow-x: auto;
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
   }
 
   #sidebar{
