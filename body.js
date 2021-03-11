@@ -15,5 +15,5 @@ include('./Scripts/jquery-1.11.3.min.js');
 include('./Scripts/popper.min.js');
 include('./Scripts/bootstrap.min.js');
 include('./Scripts/linbananaBlog.js');
-include('./s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90');
-include('./linbanana.disqus.com/count.js');
+include('//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90');
+include('//linbanana.disqus.com/count.js');
