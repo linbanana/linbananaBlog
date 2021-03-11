@@ -9,7 +9,7 @@ function include(file) {
 
 }
 
-if(window.location.href.indexOf("article") <> -1){
+if(window.location.href.indexOf("article") != -1){
 
 	/* Include Many js files */
 	include('./linbananaBlog/Scripts/jquery-3.4.1.slim.min.js');
