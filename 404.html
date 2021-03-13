@@ -3,24 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <!-- w3 js -->
-  <script src="Scripts/w3.js"></script>
-  <!-- w3 js -->
-
-  <!-- Navigation --> 
-  <div w3-include-html="head.html"></div>
-  
-  <!-- w3 js -->
-  <script src="Scripts/w3.js"></script>
-  <!-- w3 js -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Page not found - linbanana`Blog</title>
+
+  <!-- w3 js -->
+  <script src="static/js/w3.js"></script>
+  <!-- w3 js -->
 </head>
 
 <body>
-  
-  <!-- Navigation --> 
-  <div w3-include-html="layouts/navbar.html"></div>
+
+  <div id="navbar">
+  </div>
 
 
   <!-- Page Content -->
@@ -30,9 +24,6 @@
 
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4" id="sidebar">
-
-        <div w3-include-html="layouts/sidebar.html"></div>  
-
       </div>
 
       <!-- Blog Entries Column -->
@@ -40,7 +31,7 @@
 
         <div w3-include-html="layouts/pages/404 pages.html"></div>  
 
-      </div>      
+      </div>
 
     </div>
     <!-- /.row -->
@@ -48,15 +39,8 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <div w3-include-html="layouts/footer.html"></div>
-
-  <!-- Facebook -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
-
-  <script src="body.js" async></script>
-
+  <div id="footer"></div>
+  <script src="body.js"></script>
   <!-- w3 js -->
   <script>w3.includeHTML();</script>
   <!-- w3 js -->

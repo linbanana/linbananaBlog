@@ -3,23 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <!-- w3 js -->
-  <script src="\linbananaBlog\Scripts/w3.js"></script>
-  <!-- w3 js -->
-  <!-- 加載Google Google Code Prettify -->
-  <script src="\linbananaBlog\Scripts/run_prettify.js"></script>
-  <!-- 加載Google Google Code Prettify -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>使用Github pages創建自己的Blog吧！ - linbanana`Blog</title>
 
-  <!-- Navigation --> 
-  <div w3-include-html="\linbananaBlog\head.html"></div>
-
-  <title>Java利用Scanner查詢費式數列 - linbanana`Blog</title>
+  <!-- w3 js -->
+  <script src="../static/js/w3.js"></script>
+  <!-- w3 js -->
 </head>
 
 <body>
 
-  <!-- Navigation --> 
-  <div w3-include-html="\linbananaBlog/layouts/navbar.html"></div>
+  <div id="navbar">
+  </div>
 
 
   <!-- Page Content -->
@@ -29,15 +24,13 @@
 
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4" id="sidebar">
-
-        <div w3-include-html="\linbananaBlog/layouts/sidebar.html"></div>  
-
       </div>
 
       <!-- Blog Entries Column -->
-      <div class="col-md-8">
+      <div class="col-md-8" id="main">
 
-        <div w3-include-html="\linbananaBlog/article/content/Fibonacci_content.html"></div>
+
+        <div id="Pagination"></div>
 
         <!-- Disqus -->
         <div id="disqus_thread"></div>
@@ -64,19 +57,19 @@
           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
           <!-- Pagination -->
-          <ul class="pagination justify-content-center mb-4">
+<!--           <ul class="pagination justify-content-center mb-4">
             <li class="page-item">
-              <a class="page-link" href="https://linbanana.github.io/linbananaBlog/article/Java99_layouts.html">&laquo;</a>
-            </li>              
+              <a class="page-link" href="https://linbanana.github.io/linbananaBlog/index.html">&laquo;</a>
+            </li>
             <li class="page-item">
               <a class="page-link" href="https://linbanana.github.io/linbananaBlog/index.html"><img src="https://linbanana.github.io/linbananaBlog/svg/home.svg"></a>
-            </li>              
-            <li class="page-item">
-              <a class="page-link" href="https://linbanana.github.io/linbananaBlog/article/Random_layouts.html">&raquo;</a>
             </li>
-          </ul>  
+            <li class="page-item">
+              <a class="page-link" href="https://linbanana.github.io/linbananaBlog/article/HTML cut_layouts.html">&raquo;</a>
+            </li>
+          </ul> -->
 
-        </div>     
+        </div>
 
       </div>
       <!-- row -->
@@ -84,17 +77,10 @@
     </div>
     <!-- container -->
 
-    <!-- Footer -->
-    <div w3-include-html="\linbananaBlog/layouts/footer.html"></div>
-
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
-
-    <script src="\linbananaBlog\body.js" async></script>
-
-    <!-- w3 js -->
-    <script>w3.includeHTML();</script>
-    <!-- w3 js -->
-  </body>
-  </html>
+  <div id="footer"></div>
+  <script src="../body.js"></script>
+  <!-- w3 js -->
+  <script>w3.includeHTML();</script>
+  <!-- w3 js -->
+</body>
+</html>

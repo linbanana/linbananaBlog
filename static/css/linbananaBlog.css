@@ -1,0 +1,457 @@
+body{
+	background-color: #ccc;
+  font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
+}
+
+pre{
+	background-color: rgba(204,204,204,0.6);
+  overflow-x: auto;
+  font-size: 65%;
+}
+
+#footer {
+    clear: both;
+    width: 100%;
+}
+
+#filterBtn {
+  height: auto;
+}
+
+#filterBtn a {
+  margin: 1.5%;
+  padding: 5px 30px;
+  background: #fff;
+  background: linear-gradient(to bottom,  #fff 40%,#ddd 100%);
+  border: #fad3ad 1px solid;
+  border-radius: 30px;
+  float: left;
+}
+
+#filterBtn a:hover {
+  background: #fff;
+  text-decoration-line: underline;
+  border: red 1px solid;
+}
+
+#filterBtn a.active {
+  color: #ff0000;
+  font-weight: bold;
+  background: #fff;
+  border: red 1px solid;
+}
+
+#filterList{
+  float: left;
+}
+
+#filterList ul {
+  width: 100%;
+}
+
+#filterList ul li{
+  width: 100%;
+}
+
+/*all card邊框*/
+.card{
+	border: 1.5px solid #ffd4aa;
+}
+
+/*Navigation*/
+.navbar {
+    background: linear-gradient(217deg,#000, #c7c7c7);
+    transition: top 0.5s ease;
+}
+
+/*取消navbar-toggler border*/
+.navbar-dark .navbar-toggler{
+  border-color: transparent;
+}
+
+/*navbar-toggler x*/
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+
+.navbar-toggler::before {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/*navbar-toggler x*/
+
+.navbar-hide {
+    top: -68px;
+}
+
+.site-logo img {
+    max-height: 2rem;
+}
+
+.site-title{
+	flex: auto;
+	font-size: 1.5rem;	
+	align-self:center;
+	font-weight:bold;
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 0 3px yellow;
+}
+
+.site-title:hover{
+	text-decoration: none;
+	text-shadow: 0 0 3px yellow;
+}
+
+.text-purple{
+	color: #6441a4 !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: #ccc;
+}
+
+.active a{
+    color: yellow !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #00d0ff;
+  border-bottom:3px solid #ff0000;
+}
+/*Navigation*/
+
+/*container*/
+.card-title{
+  text-decoration: underline !important;
+  color: #000 !important;
+  background-color: rgba(204, 204, 204,0.3) !important;
+}
+
+.card-body{
+  background-color: #f5e1d8;
+  border-bottom: 1.5px solid #ffd4aa;
+  /*background-image: url(https://i.picsum.photos/id/313/727/1000.jpg?blur=3);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-p{
+  background-color: #0099ff;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.card-text,.h1,.h2,.h3,.h4 {
+  color: #000;
+  background-color: rgba(245, 225, 216,0.7);
+}
+/*container*/
+
+/*<-- sidebar -->*/
+
+#sidebar-Categories li li a{
+    display: none;
+}
+
+ul { /*取消ul預設的內縮及樣式*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*大頭照*/
+.card-img-myphoto-top{
+	  width: 100%;
+    height: 462px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 50%;
+}
+
+.card-img-myphoto-bottom{
+    width: 100%;
+    height: 462px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 50%;
+
+}
+
+#myimgloop{
+  position: relative;
+  width: 100%;
+  height: 462px;
+  margin: 0 auto;
+}
+
+#myimgloop img{
+  position: absolute;
+  left: 0;
+}
+
+#myimgloop img.card-img-myphoto-bottom{
+  animation-name: imgloop;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  -webkit-animation-name: imgloop;/*Safari and Google Chrome*/
+  -webkit-animation-timing-function: ease-in-out;/*Safari and Google Chrome*/
+  -webkit-animation-iteration-count: infinite;/*Safari and Google Chrome*/
+  -webkit-animation-duration: 5s;/*Safari and Google Chrome*/
+  -webkit-animation-direction: alternate;/*Safari and Google Chrome*/
+  -moz-animation-name: imgloop;/*firefox*/
+  -moz-animation-timing-function: ease-in-out;/*firefox*/
+  -moz-animation-iteration-count: infinite;/*firefox*/
+  -moz-animation-duration: 5s;/*firefox*/
+  -moz-animation-direction: alternate;/*firefox*/
+  -o-animation-name: imgloop;/*Opera*/
+  -o-animation-timing-function: ease-in-out;/*Opera*/
+  -o-animation-iteration-count: infinite;/*Opera*/
+  -o-animation-duration: 5s;/*Opera*/
+  -o-animation-direction: alternate;/*Opera*/
+}
+
+@keyframes imgloop{
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  50%{
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.card-name{
+	font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,Microsoft JhengHei,sans-serif;
+	font-size: 1.5em;
+  margin:10px auto 10px auto;
+  font-weight:bold;
+}
+/*大頭照*/
+
+/*follow*/
+.linbanana-wrapper li{
+    margin-bottom: 5px;
+}
+
+.linbanana-wrapper a{
+  color: #000;
+}
+
+.linbanana-wrapper a:hover{
+  color: #007bff;
+}
+
+.btn-follow{
+  background-color: #000;
+  color: #fac;
+  border:3px solid #ffc107;
+}
+
+button.btn.btn-follow:hover{
+  color: #fff;
+}
+
+button.btn.btn-follow:active{
+  color: #fff;
+}
+
+#follow{
+  margin: 15px auto 15px auto;
+}
+/*follow*/
+
+.sidebar-card-body{
+	  flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.back-to-top {
+ 	  cursor: pointer;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+
+/*search*/
+
+.searchbtn{
+	  display: inline-block;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 50rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.searchdropdown a:hover{
+    background-color: transparent;
+}
+
+#key-in {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  width: 100%;
+}
+
+input[type=text]{
+	background-color: #ddd;
+}
+
+input[type=text]:focus {
+	background-color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  min-width: 1rem;
+  overflow: auto;
+  border: 1.5px solid #b3d7ff;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+	display: block;
+}
+/*search*/
+
+/*footer*/
+.footer a {
+    color: #fff;
+}
+/*footer*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+  pre{
+    font-size: 50%;
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
+  }
+}
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  pre{
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  pre{
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
+  }
+
+  #sidebar{
+    height: 100%; // experiment with this value, try changing to 110vh
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  pre{
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
+  }
+
+  #sidebar{
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+  pre{
+    overflow-x: visible;
+    -webkit-overflow-x: visible;
+  }
+
+  #sidebar{
+    height: 100%; // experiment with this value, try changing to 110vh
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+  }
+}

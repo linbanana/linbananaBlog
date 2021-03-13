@@ -3,21 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <!-- w3 js -->
-  <script src="Scripts/w3.js"></script>
-  <!-- w3 js -->
-
-  <!-- Navigation --> 
-  <div w3-include-html="head.html"></div>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>index - linbanana`Blog</title>
+
+  <!-- w3 js -->
+  <script src="static/js/w3.js"></script>
+  <!-- w3 js -->
 </head>
 
 <body>
 
-  <!-- Navigation --> 
-  <div w3-include-html="layouts/navbar.html"></div>
-
+  <div id="navbar">
+  </div>
 
   <!-- Page Content -->
   <div class="container">
@@ -26,216 +23,11 @@
 
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4" id="sidebar">
-
-        <div w3-include-html="layouts/sidebar.html"></div>       
-
       </div>
 
       <!-- Blog Entries Column -->
-      <div class="col-md-8">
-        <div class="clearfix col-md-12 py-2">
-          <div id="filterBtn">
-            <a href="javascript:void(0);" class="allItem active">ALL</a>
-            <a href="javascript:void(0);" class="HTML">HTML</a>
-            <a href="javascript:void(0);" class="javascript">javascript</a>
-            <a href="javascript:void(0);" class="Java">Java</a>
-            <a href="javascript:void(0);" class="bat">bat</a>
-            <a href="javascript:void(0);" class="SQL">SQL</a>
-            <a href="javascript:void(0);" class="software">software</a>
-            <a href="javascript:void(0);" class="other">other</a>
-          </div>
-        </div>
-
-        <div class="col-md-12" id="filterList">
-          <ul>
-            <li class="no">
-              <!-- Blog Post -->
-              <div class="card mb-4 my-4">
-                <button class="btn btn-danger">
-                  <span class="spinner-border spinner-border-sm"></span>
-                  UPDATE...
-                </button>
-                <div class="card-body">
-                  <h2 class="card-title">網站持續更新中...</h2>
-                </div>
-                <div class="card-footer text-muted">
-                  by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                </div>
-              </div>
-            </li>
-            <li class="other">
-              <!-- Blog Post -->
-              <div class="card mb-4">
-                <div class="card-body">
-                  <h2 class="card-title">使用Github pages創建自己的Blog吧！</h2>
-                  <a href="article/Github pages_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/08/24 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">other</span>
-                </div>
-              </div>
-            </li>
-            <li class="HTML">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">將HTML切割引用至其他分頁上</h2>
-                  <a href="article/HTML cut_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/08/26 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">HTML</span>
-                </div>
-              </div>
-            </li>
-            <li class="Java">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">Java利用Scanner查詢99乘法表</h2>
-                  <a href="article/Java99_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/08/31 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">Java</span>
-                </div>
-              </div>
-            </li>
-            <li class="Java">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">Java利用Scanner查詢費式數列</h2>
-                  <a href="article/Fibonacci_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/08/31 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">Java</span>
-                </div>
-              </div>
-            </li>
-            <li class="Java">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">Java利用Scanner自訂範圍抽籤</h2>
-                  <a href="article/Random_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/09/03 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">Java</span>
-                </div>
-              </div>
-            </li>
-            <li class="bat">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">利用批次檔製作網路診斷工具！</h2>
-                  <a href="article/Network-diagnostics_bat_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/09/03 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">bat</span>
-                </div>
-              </div>
-            </li>
-            <li class="software">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">Minimem 記憶體最佳化管理工具</h2>
-                  <a href="article/Minimem_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/09/03 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">software</span>
-                </div>
-              </div>
-            </li>
-            <li class="software">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">Revo Uninstaller 輕鬆卸載軟件並刪除不需要的程序</h2>
-                  <a href="article/Revo Uninstaller_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/09/10 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">software</span>
-                </div>
-              </div>
-            </li>
-            <li class="other">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">How to allow XAMPP Apache listening to multiple network ports?</h2>
-                  <a href="article/XAMPP_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2019/12/29 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">other</span>
-                </div>
-              </div>
-            </li>
-            <li class="software">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">DesktopOK 儲存並還原桌面小圖示排列位置</h2>
-                  <a href="article/DesktopOK_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2020/01/22 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">software</span>
-                </div>
-              </div>
-            </li>
-            <li class="SQL">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">SQL指令應用</h2>
-                  <a href="article/SQL_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2020/01/29 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">SQL</span>
-                </div>
-              </div>
-            </li>
-            <li class="javascript">
-              <!-- Blog Post -->
-              <div class="card mb-4">       
-                <div class="card-body">
-                  <h2 class="card-title">Run JavaScript Only After Entire Page Has Loaded</h2>
-                  <a href="article/jsLoaded_layouts.html" class="btn btn-primary">看更多 &rarr;</a>
-                </div>
-                <div class="card-footer text-muted fa fa-calendar">
-                  2020/01/30 by
-                  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
-                  <span class="badge badge-pill badge-primary float-right">javascript</span>
-                </div>
-              </div>
-            </li>
-            <li class=""></li>
-            <li class=""></li>
-          </ul>
-        </div>
+      <div class="col-md-8" id="main">
+        <!-- <div id="article" w3-include-html="inc/fixed.html"></div> -->
       </div>
     </div>
     <!-- /.row -->
@@ -243,15 +35,8 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <div w3-include-html="layouts/footer.html"></div>
-
-  <!-- Facebook -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
-
-  <script src="body.js" async></script>
-
+  <div id="footer"></div>
+  <script src="body.js"></script>
   <!-- w3 js -->
   <script>w3.includeHTML();</script>
   <!-- w3 js -->
