@@ -44,12 +44,14 @@ include_html(origin + 'layouts\\footer.html','footer');
 include_head(origin + 'static\\font-awesome-4.7.0\\css\\font-awesome.min.css');
 include_head(origin + 'static\\css\\bootstrap.min.css');
 include_head(origin + 'static\\css\\linbananaBlog.css');
+include_head('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
 
 include_body(origin + 'static\\js\\jquery-3.4.1.slim.min.js');
 include_body(origin + 'static\\js\\jquery-1.11.3.min.js');
 include_body(origin + 'static\\js\\popper.min.js');
 include_body(origin + 'static\\js\\bootstrap.min.js');
 include_body(origin + 'static\\js\\linbananaBlog.js');
+include_body(origin + 'static\\js\\run_prettify.js');
 include_body('//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d49835d5bd6ff90');
 include_body('//linbanana.disqus.com/count.js');
 
@@ -66,7 +68,7 @@ function checktotal(num){
 	if(num == 0){
 		num = "";
 	}else{
-		num = "[" + num + "]";
+		num = " <span class='badge badge-primary'>" + num + "</span>";
 	}
 
 	return num;
@@ -156,9 +158,11 @@ if((loc.indexOf("index") != -1) || (loc == "")){
 	  softwarenum 	= checktotal(softwarenum);
 	  othernum 		= checktotal(othernum);
 
+	  totalnum      = checktotal(len);
+
 	  html = "<div class='clearfix col-md-12 py-2'>";
 	  html += "<div id='filterBtn'>";
-	  html += "<a href='javascript:void(0);' class='allItem active'>ALL</a>";
+	  html += "<a href='javascript:void(0);' class='allItem active'>ALL"+ totalnum +"</a>";
 	  html += "<a href='javascript:void(0);' class='HTML'>HTML"+ HTMLnum +"</a>";
 	  html += "<a href='javascript:void(0);' class='javascript'>javascript"+ javascriptnum +"</a>";
 	  html += "<a href='javascript:void(0);' class='JAVA'>JAVA"+ JAVAnum +"</a>";
@@ -211,10 +215,10 @@ function include(file,num,len) {
   }
 
   html += "<li class='page-item "+ disabled +"'>";
-  html += "<a class='page-link' href='#' onclick='change_html(1)'>&laquo;</a>";
+  html += "<a class='page-link' href='#' onclick='change_html(1)'><i class='fa fa-fast-backward' aria-hidden='true'></i></a>";
   html += "</li>";
   html += "<li class='page-item "+ disabled +"'>";
-  html += "<a class='page-link' href='#' onclick='change_html("+ (num-1) +")'>&lt;</a>";
+  html += "<a class='page-link' href='#' onclick='change_html("+ (num-1) +")'><i class='fa fa-step-backward' aria-hidden='true'></i></a>";
   html += "</li>";
 
   for (var i = startnum; i <= endnum; i++) {
@@ -236,10 +240,11 @@ function include(file,num,len) {
   }
 
   html += "<li class='page-item "+ disabled +"'>";
-  html += "<a class='page-link' href='#' onclick='change_html("+ (num+1) +")'>&gt;</a>";
+  html += "<a class='page-link' href='#' onclick='change_html("+ (num+1) +")'><i class='fa fa-step-forward' aria-hidden='true'></i></a>";
+  html += "</li>";
   html += "</li>";
   html += "<li class='page-item "+ disabled +"'>";
-  html += "<a class='page-link' href='#' onclick='change_html("+ len +")'>&raquo;</a>";
+  html += "<a class='page-link' href='#' onclick='change_html("+ len +")'><i class='fa fa-fast-forward' aria-hidden='true'></i></a>";
   html += "</li>";
   html += "</ul>";
 

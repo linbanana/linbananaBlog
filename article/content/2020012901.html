@@ -1,23 +1,23 @@
-<!-- Blog Post -->
+﻿<!-- Blog Post -->
 <div class="card mb-4 my-4">
   <div class="card-body">
-    <h2 class="card-title">SQL指令應用</h2><br/>
-    <h3 class="card-text">1.新增使用者帳號<br/></h3>
+    <h2 class="card-title">SQL指令應用</h2><br>
+    <h3 class="card-text">1.新增使用者帳號<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">CREATE USER '使用者帳號'@'localhost' IDENTIFIED BY '使用者密碼';</code>
       </pre>
     </h3>
-    <h3 class="card-text">2.將使用者帳號設定為ALL PRIVILEGES<br/></h3>
+    <h3 class="card-text">2.將使用者帳號設定為ALL PRIVILEGES<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">GRANT ALL PRIVILEGES on *.* to '使用者帳號'@'localhost';</code>
       </pre>
     </h3>
-    <h3 class="card-text">3.建立資料庫<br/></h3>
+    <h3 class="card-text">3.建立資料庫<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">CREATE DATABASE `資料庫名稱`;</code>
       </pre>
     </h3>
-    <h3 class="card-text">4.建立資料表<br/></h3>
+    <h3 class="card-text">4.建立資料表<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">CREATE TABLE `資料庫名稱`.`資料表名稱` (
           `欄位名稱` int(10) NOT NULL PRIMARY key AUTO_INCREMENT,
@@ -26,22 +26,22 @@
           ) ENGINE = InnoDB;</code>
       </pre>
     </h3>
-    <h3 class="card-text">5.增加欄位、ENUM使用<br/></h3>
+    <h3 class="card-text">5.增加欄位、ENUM使用<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">ALTER TABLE `資料表名稱` ADD `欄位名稱` ENUM('M','F','N','') NOT NULL DEFAULT 'N';</code>
       </pre>
     </h3>
-    <h3 class="card-text">6.修改資料表結構<br/></h3>
+    <h3 class="card-text">6.修改資料表結構<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">ALTER TABLE `資料表名稱` CHANGE `舊欄位名稱` `新欄位名稱` varchar(10);</code>
       </pre>
     </h3>
-    <h3 class="card-text">7.刪除資料表欄位<br/></h3>
+    <h3 class="card-text">7.刪除資料表欄位<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">ALTER TABLE `資料表名稱` DROP `欄位名稱`;</code>
       </pre>
     </h3>
-    <br/><br/>
+    <br><br>
   </div>
   <div class="card-footer text-muted fa fa-calendar">
     2020/01/29 by

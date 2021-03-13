@@ -27,8 +27,8 @@ pre{
 }
 
 #filterBtn a {
-  margin: 1.5%;
-  padding: 5px 30px;
+  margin: 1.67%;
+  padding: 5px 37px;
   background: #fff;
   background: linear-gradient(to bottom,  #fff 40%,#ddd 100%);
   border: #fad3ad 1px solid;
@@ -183,6 +183,10 @@ pre{
 .card-body{
   background-color: #f5e1d8;
   border-bottom: 1.5px solid #ffd4aa;
+  /*background-image: url(../../images/linbanana_board.png);*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100% 100%;*/
 }
 
 .card-p{
@@ -326,7 +330,7 @@ button.btn.btn-follow:active{
 .back-to-top {
  	  cursor: pointer;
     position: fixed;
-    bottom: 80px;
+    bottom: 60px;
     right: 10px;
     border-radius: 50%;
 }

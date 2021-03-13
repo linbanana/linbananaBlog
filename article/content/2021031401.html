@@ -1,0 +1,56 @@
+﻿<!-- Blog Post -->
+<div class="card mb-4 my-4">
+  <div class="card-body">
+    <h2 class="card-title">SQL指令應用</h2><br>
+    <h3 class="card-text">1.查詢資料表顯示所有欄位<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">select * from `資料表名稱`;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">2.查詢資料表顯示特別欄位加入別名<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名' FROM `資料表名稱`;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">3.排除重覆值<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT DISTINCT `欄位名稱` FROM `資料表名稱`;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">4.顯示目前排序後之設定筆數<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` LIMIT 50;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">5.使用欄位排序<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` ORDER BY `欄位名稱`;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">6.自訂兩欄位以上排序<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` ORDER by `欄位名稱` DESC,`欄位名稱` ASC;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">7.顯示指定特定欄位篩選值<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` WHERE `欄位名稱`='條件';</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">8.篩選與排序複合<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` WHERE `欄位名稱`='條件' ORDER by `欄位名稱` DESC;</code>
+      </pre>
+    </h3>
+    <h3 class="card-text">9.加入關係運算子條件篩選<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` WHERE `欄位名稱`='條件' or `欄位名稱`='條件';</code>
+      </pre>
+    </h3>
+    <br><br>
+  </div>
+  <div class="card-footer text-muted fa fa-calendar">
+    2021/03/14 by
+    <a href="https://ubin.io/linbanana0803fb">巴那那</a>
+    <span class="badge badge-pill badge-primary float-right">SQL</span>
+  </div>

@@ -1,4 +1,4 @@
-[
+﻿[
 
     {
         "class": "other",
@@ -71,6 +71,12 @@
         "title": "Run JavaScript Only After Entire Page Has Loaded",
         "url": "article\\content\\2020013001.html",
         "date": "2020/01/30"
+    },
+    {
+        "class": "SQL",
+        "title": "SQL指令應用2",
+        "url": "article\\content\\2021031401.html",
+        "date": "2021/03/14"
     }
 
 ]
