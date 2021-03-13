@@ -76,6 +76,7 @@ function checktotal(num){
 
 var loc = window.location.href.replace(window.location.origin + "/","");
 loc = loc.replace("#","");
+loc = loc.replace("linbananaBlog/","");
 if((loc.indexOf("index") != -1) || (loc == "")){
 
 	var xhr = new XMLHttpRequest();
@@ -186,6 +187,7 @@ function include(file,num,len) {
   html.setAttribute("id", "article");
   document.getElementById("main").prepend(html);
 
+  /************************ 分頁 ************************/
   var startnum = 0, endnum = 0;
   var disabled = "";
   num = parseInt(num);
@@ -216,8 +218,6 @@ function include(file,num,len) {
   html += "<a class='page-link' href='#' onclick='change_html("+ (num-1) +")'>&lt;</a>";
   html += "</li>";
 
-  alert(startnum + "\n" + endnum);
-
   for (var i = startnum; i <= endnum; i++) {
 
   	if(i == num){
@@ -247,6 +247,7 @@ function include(file,num,len) {
   if(document.getElementById("Pagination")){
   	document.getElementById("Pagination").innerHTML += html;
   }
+  /************************ 分頁 ************************/
 
 }
 
