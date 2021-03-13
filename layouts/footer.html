@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark" id="footer">
-    <p class="m-0 text-center text-white">copyright &copy; 2019 - <span id="date"></span> linbanana`Blog<br/>Proudly hosted by <a href="https://pages.github.com">GitHub Pages</a>
+    <p class="m-0 text-center text-white">copyright &copy; 2019 - <span id="date" onload="var d = new Date() d.getFullYear();"></span> linbanana`Blog<br/>Proudly hosted by <a href="https://pages.github.com" style="color:#fff;text-decoration-line: none;">GitHub Pages</a>
     </p>
 </footer>
 
@@ -10,14 +10,5 @@
 <!-- Facebook -->
 <div id="fb-root"></div>
 <script defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=436013107138958&autoLogAppEvents=1"></script>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-	  /* footer */
-	  var d = new Date();
-	  document.getElementById("date").innerText = d.getFullYear();
-	  /* footer */
-	});
-</script>
 
 

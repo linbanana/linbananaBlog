@@ -1,6 +1,10 @@
 body{
 	background-color: #ccc;
   font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande","Microsoft YaHei",Arial,sans-serif;
+  background-image: url(../../images/linbanana_bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 pre{
@@ -12,6 +16,10 @@ pre{
 #footer {
     clear: both;
     width: 100%;
+    background-image: url(../../images/linbanana_footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #filterBtn {
@@ -175,10 +183,6 @@ pre{
 .card-body{
   background-color: #f5e1d8;
   border-bottom: 1.5px solid #ffd4aa;
-  /*background-image: url(https://i.picsum.photos/id/313/727/1000.jpg?blur=3);*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card-p{

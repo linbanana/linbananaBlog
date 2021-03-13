@@ -59,6 +59,13 @@ window.onload = function(){
       $('.navbar').removeClass("navbar-hide");
     }
 
+    if(document.getElementById("date").innerText === ""){
+      /* footer */
+      var d = new Date();
+      document.getElementById("date").innerText = d.getFullYear();
+      /* footer */
+    };
+
   });
   /* navbar scroll functions */
 

@@ -36,11 +36,10 @@ if(origin.indexOf("localhost") == -1){
 	origin = origin + "linbananaBlog\\";
 
 }
-
+var d = new Date();
 include_html(origin + 'layouts\\navbar.html','navbar');
 include_html(origin + 'layouts\\sidebar.html','sidebar');
 include_html(origin + 'layouts\\footer.html','footer');
-
 
 include_head(origin + 'static\\font-awesome-4.7.0\\css\\font-awesome.min.css');
 include_head(origin + 'static\\css\\bootstrap.min.css');
