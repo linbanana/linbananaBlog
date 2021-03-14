@@ -27,8 +27,8 @@ pre{
 }
 
 #filterBtn a {
-  margin: 1.67%;
-  padding: 5px 37px;
+  margin-bottom: 1.5%;
+  padding: 5px 30px;
   background: #fff;
   background: linear-gradient(to bottom,  #fff 40%,#ddd 100%);
   border: #fad3ad 1px solid;
@@ -70,6 +70,10 @@ pre{
 .navbar {
     background: linear-gradient(217deg,#000, #c7c7c7);
     transition: top 0.5s ease;
+    background-image: url(../../images/linbanana_navbar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /*取消navbar-toggler border*/
@@ -135,19 +139,19 @@ pre{
 
 .site-title{
 	flex: auto;
-	font-size: 1.5rem;	
+	font-size: 1.5rem;
 	align-self:center;
 	font-weight:bold;
 	display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
-  text-shadow: 0 0 3px yellow;
+  text-shadow: 0 0 3px #4267b2;
 }
 
 .site-title:hover{
 	text-decoration: none;
-	text-shadow: 0 0 3px yellow;
+	text-shadow: 0 0 3px #4267b2;
 }
 
 .text-purple{

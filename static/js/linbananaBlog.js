@@ -11,6 +11,9 @@ window.onload = function(){
     filterBtn.click(function(){
       if(!($(this).hasClass('active'))){
         var filterClass = $(this).attr('class');
+        // 因filterBtn class有col-6 text-center
+        filterClass = filterClass.replace(" col-6","");
+        filterClass = filterClass.replace(" text-center","");
 
         filterList.each(function(){
           if($(this).hasClass(filterClass)){
@@ -106,6 +109,13 @@ window.onload = function(){
     }
   }
   /* search */
+
+  /* 排序 */
+  $('#sort').on('change', function(){
+    var htmlurl = "?sort=" + $(this).val();
+    window.location = htmlurl;
+  });
+  /* 排序 */
 
 };
 

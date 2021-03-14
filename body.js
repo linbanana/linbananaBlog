@@ -59,59 +59,60 @@ include_body('//linbanana.disqus.com/count.js');
 /***************************** include all files *****************************/
 
 /***************************** index *****************************/
-function filterBtn(html){
+// **************************************************
+// **@Function: include_index(html)
+// **@Description: 會判斷是否為首頁，如果有window.location.search的參數，才進行資料排序
+// **************************************************
+
+function include_index(html){
 	document.getElementById("main").innerHTML += html;
-}
-
-function checktotal(num){
-
-	if(num == 0){
-		num = "";
-	}else{
-		num = " <span class='badge badge-primary'>" + num + "</span>";
-	}
-
-	return num;
-
 }
 
 var loc = window.location.href.replace(window.location.origin + "/","");
 loc = loc.replace("#","");
 loc = loc.replace("linbananaBlog/","");
 if((loc.indexOf("index") != -1) || (loc == "")){
+	var sort = "";
+	if(window.location.search){
+		sort = window.location.search;
+		sort = sort.substring(1,sort.length);
+	}
 
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET',"article.json",true);
 	xhr.send(null);
 	xhr.onload = function(){
 	  var datastr = JSON.parse(xhr.responseText);
+
+	  // 依照類別排序
+	  if(sort == "sort=class"){
+	  	  datastr.sort(function(x, y) {
+	  		  	if(x.class > y.class) return 1;
+	  		  	if(x.class < y.class) return -1;
+	  	  });
+	  	  // console.log(datastr);
+	  }
+
 	  var len  = datastr.length;
-	  var HTMLnum=0, javascriptnum=0, JAVAnum=0, batnum=0, SQLnum=0, softwarenum=0, othernum=0;
 	  var html = "", html_li = "";
+
+	  // 定義屬性和值，預設要有 ALL 類別並把資料大小賦予該值。
+	  var json={ALL: len};
+
 	  for (var i = 0; i < len; i++) {
 
-	  	switch(datastr[i].class){
-		  case "HTML":
-		    HTMLnum++;
-		    break;
-		  case "javascript":
-		    javascriptnum++;
-		    break;
-		  case "JAVA":
-		    JAVAnum++;
-		    break;
-		  case "bat":
-		    batnum++;
-		    break;
-		  case "SQL":
-		    SQLnum++;
-		    break;
-		  case "software":
-		    softwarenum++;
-		    break;
-		  default:
-		    othernum++;
-		}
+	  	var key = datastr[i].class;
+
+	  	if(json[key]){
+	  		//去重+统计
+	  		//存在
+	  		json[key]++;//取出属性值+1
+	  	}else{
+	  		//不存在
+	  		json[key]=1;//做一个属性赋值1
+	  	}
+
+		/*-----------去重、统计已经完成-----------*/
 
 		if(i == 0){
 			html_li += "<li class='no'>";
@@ -150,32 +151,59 @@ if((loc.indexOf("index") != -1) || (loc == "")){
 
 	  };
 
-	  HTMLnum 		= checktotal(HTMLnum);
-	  javascriptnum = checktotal(javascriptnum);
-	  JAVAnum 		= checktotal(JAVAnum);
-	  batnum 		= checktotal(batnum);
-	  SQLnum 		= checktotal(SQLnum);
-	  softwarenum 	= checktotal(softwarenum);
-	  othernum 		= checktotal(othernum);
+	  var arr2=[];
 
-	  totalnum      = checktotal(len);
+	  for(var key in json){
 
+	  	arr2.push({name:key,count:json[key]});
+
+	  }
+
+	  var date_disabled, class_disabled;
+	  var date_selected, class_selected;
+	  // 依照類別排序
+	  if(sort == "sort=class"){
+	  	arr2.sort(function(x,y){
+	  		if(x.key > y.key) return 1;
+	  		if(x.key < y.key) return -1;
+	  	});
+	  	class_disabled = "disabled";
+	  	class_selected = "selected";
+
+	  }else{
+	  	date_disabled = "disabled";
+	  	date_selected = "selected";
+	  }
+
+	  // filterBtn
 	  html = "<div class='clearfix col-md-12 py-2'>";
+	  html += "<select id='sort' class='custom-select-sm col-12 my-2'>";
+	  html += "<option value='date' "+ date_disabled + " " + date_selected + ">依照日期排序</option>"
+	  html += "<option value='class' "+ class_disabled + " " + class_selected + ">依照類別排序</option>"
+	  html += "</select>";
 	  html += "<div id='filterBtn'>";
-	  html += "<a href='javascript:void(0);' class='allItem active'>ALL"+ totalnum +"</a>";
-	  html += "<a href='javascript:void(0);' class='HTML'>HTML"+ HTMLnum +"</a>";
-	  html += "<a href='javascript:void(0);' class='javascript'>javascript"+ javascriptnum +"</a>";
-	  html += "<a href='javascript:void(0);' class='JAVA'>JAVA"+ JAVAnum +"</a>";
-	  html += "<a href='javascript:void(0);' class='bat'>bat"+ batnum +"</a>";
-	  html += "<a href='javascript:void(0);' class='SQL'>SQL"+ SQLnum +"</a>";
-	  html += "<a href='javascript:void(0);' class='software'>software"+ softwarenum +"</a>";
-	  html += "<a href='javascript:void(0);' class='other'>other"+ othernum +"</a>";
+
+	  for(var i=0;i<arr2.length;i++){
+
+	  	if(i == 0){
+	  		html += "<a href='javascript:void(0);' class='allItem active col-12'>"+ arr2[i].name;
+	  	}else{
+	  		html += "<a href='javascript:void(0);' class='"+ arr2[i].name +" col-6'>"+ arr2[i].name;
+	  	}
+
+	  	html += "<span class='badge badge-pill badge-primary float-right'>" + arr2[i].count + "</span>";
+	  	html += "</a>";
+
+	  }
+
 	  html += "</div></div>";
+
+	  // filterList
 	  html += "<div class='col-md-12' id='filterList'>";
 	  html += "<ul>";
 	  html += html_li;
 	  html += "</ul></div>";
-	  filterBtn(html);
+	  include_index(html);
 
 	};
 
@@ -183,6 +211,13 @@ if((loc.indexOf("index") != -1) || (loc == "")){
 /***************************** index *****************************/
 
 /***************************** article *****************************/
+// **************************************************
+// **@Function: change_html(num)，find_page(num)，include(file,num,len)
+// **@Description: 當點擊文章時會觸發 change_html(num)，
+// 然後依window.location.search判斷目前頁數進行find_page(num)，
+// 最後才透過include(file,num,len)將文章顯示出來並處理分頁。
+// **************************************************
+
 function include(file,num,len) {
 
   var html = document.createElement('div');
@@ -264,6 +299,11 @@ function find_page(num){
 	xhr.onload = function(){
 	  datastr = JSON.parse(xhr.responseText);
 	  var len  = datastr.length;
+
+	  if(num > len){
+	  	var htmlurl = origin + "404.html";
+	  	window.location = htmlurl;
+	  }
 
 	  for (var i = 0; i < len; i++) {
 
