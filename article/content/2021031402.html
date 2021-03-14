@@ -1,0 +1,58 @@
+﻿<!-- Blog Post -->
+<div class="card mb-4 my-4">
+  <div class="card-body">
+    <h2 class="card-title">SQL指令應用(查詢2))</h2><br>
+    <h3 class="card-text">1.使用SQL FN完成欄位-平均<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">select avg(`欄位名稱`) from `資料表名稱`;</code></pre>
+    </h3>
+    <h3 class="card-text">2.合併欄位字串<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT concat(`欄位名稱`,' ','先生/小姐') FROM `資料表名稱`;</code></pre>
+    </h3>
+    <h3 class="card-text">3.從右邊抓取指定數文字<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT right(`欄位名稱`,3) FROM `資料表名稱`;</code></pre>
+    </h3>
+    <h3 class="card-text">4.從第2字元取3個值<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT substring(`欄位名稱`,2,3) FROM `資料表名稱`;</code></pre>
+    </h3>
+    <h3 class="card-text">5.指定特定多重值篩選<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` WHERE `欄位名稱` in('條件','條件');</code></pre>
+    </h3>
+    <h3 class="card-text">6.篩選資料表欄位為sales開頭的資料<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` WHERE left(`欄位名稱`,5)='sales' ORDER BY `欄位名稱`;</code></pre>
+    </h3>
+    <h3 class="card-text">7.統計篩算後欄位個數<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT count(*) FROM `資料表名稱` WHERE left(`欄位名稱`,5)='sales' ORDER BY `欄位名稱`;</code></pre>
+    </h3>
+    <h3 class="card-text">8.使用like指定做模糊比對<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT * FROM `資料表名稱` WHERE `欄位名稱` like 'sales%';</code></pre>
+    </h3>
+    <h3 class="card-text">9.使用範圍設定來顯示特定文字<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT `欄位名稱` CASE when `欄位名稱`>=100 then '滿分' when `欄位名稱`>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱`
+;</code></pre>
+    </h3>
+    <h3 class="card-text">10.合併應用<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名',sum(`欄位名稱`) as '別名',`欄位名稱` CASE when sum(`欄位名稱`)>=100 then '滿分' when sum(uria)>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱` GROUP BY `欄位名稱`
+;</code></pre>
+    </h3>
+    <h3 class="card-text">11.HAVING篩選<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名',sum(`欄位名稱`) as '別名',`欄位名稱` CASE when sum(`欄位名稱`)>=100 then '滿分' when sum(uria)>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱` GROUP BY `欄位名稱` HAVING sum(`欄位名稱`)>=100
+;</code></pre>
+    </h3>
+    <br><br>
+  </div>
+  <div class="card-footer text-muted fa fa-calendar">
+    2021/03/14 by
+    <a href="https://ubin.io/linbanana0803fb">巴那那</a>
+    <span class="badge badge-pill badge-primary float-right">SQL</span>
+  </div>

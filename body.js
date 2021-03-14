@@ -28,6 +28,15 @@ function include_html(file,id) {
 
 }
 
+function include_ico(file) {
+  var ico  = document.createElement('link');
+  ico.setAttribute("href", file);
+  ico.setAttribute("type", "image/x-icon");
+  ico.setAttribute("rel", "icon");
+
+  document.getElementsByTagName('head').item(0).appendChild(ico);
+}
+
 //判斷來源
 var origin = window.location.origin + "\\";
 
@@ -41,6 +50,8 @@ include_html(origin + 'layouts\\navbar.html','navbar');
 include_html(origin + 'layouts\\sidebar.html','sidebar');
 include_html(origin + 'layouts\\footer.html','footer');
 
+include_ico(origin + 'images\\linbananaBlig.ico');
+
 include_head(origin + 'static\\font-awesome-4.7.0\\css\\font-awesome.min.css');
 include_head(origin + 'static\\css\\bootstrap.min.css');
 include_head(origin + 'static\\css\\linbananaBlog.css');
@@ -48,7 +59,7 @@ include_head('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,4
 
 include_body(origin + 'static\\js\\jquery-3.4.1.slim.min.js');
 include_body(origin + 'static\\js\\jquery-1.11.3.min.js');
-include_body(origin + 'static\\js\\popper.min.js');
+include_body(origin + 'static\\js\\bootstrap.bundle.min.js');
 include_body(origin + 'static\\js\\bootstrap.min.js');
 include_body(origin + 'static\\js\\linbananaBlog.js');
 include_body(origin + 'static\\js\\run_prettify.js');
@@ -178,8 +189,8 @@ if((loc.indexOf("index") != -1) || (loc == "")){
 	  // filterBtn
 	  html = "<div class='clearfix col-md-12 py-2'>";
 	  html += "<select id='sort' class='custom-select-sm col-12 my-2'>";
-	  html += "<option value='date' "+ date_disabled + " " + date_selected + ">依照日期排序</option>"
-	  html += "<option value='class' "+ class_disabled + " " + class_selected + ">依照類別排序</option>"
+	  html += "<option value='date' "+ date_disabled + " " + date_selected + ">依照日期排序</option>";
+	  html += "<option value='class' "+ class_disabled + " " + class_selected + ">依照類別排序</option>";
 	  html += "</select>";
 	  html += "<div id='filterBtn'>";
 

@@ -74,9 +74,22 @@
     },
     {
         "class": "SQL",
-        "title": "SQL指令應用2",
+        "title": "SQL指令應用(查詢1)",
         "url": "article\\content\\2021031401.html",
         "date": "2021/03/14"
+    },
+    {
+        "class": "SQL",
+        "title": "SQL指令應用(查詢2)",
+        "url": "article\\content\\2021031402.html",
+        "date": "2021/03/14"
+    },
+    {
+        "class": "SQL",
+        "title": "SQL指令應用(合併資料表)",
+        "url": "article\\content\\2021031403.html",
+        "date": "2021/03/14"
     }
+
 
 ]
