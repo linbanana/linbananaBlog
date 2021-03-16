@@ -1,0 +1,66 @@
+﻿<!-- Blog Post -->
+<div class="card mb-4 my-4">
+  <div class="card-body">
+    <h2 class="card-title">Use SQL Server to query Active Directory</h2><br>
+    <h3 class="card-text">以下提供兩種方法<br><br></h3>
+    <h5 class="card-text">1、使用語法<br></h5>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">
+--如果伺服器不存在就新增伺服器
+IF NOT EXISTS(SELECT * FROM  master.dbo.sysservers WHERE srvname='ADSI')
+BEGIN
+    EXEC master.dbo.sp_addlinkedserver 
+    @server = N'ADSI', 
+    @srvproduct=N'Active Directory Service Interfaces', 
+    @provider=N'ADSDSOObject', 
+    @datasrc=N'adsdatasource'
+
+    EXEC master.dbo.sp_addlinkedsrvlogin 
+    @rmtsrvname=N'ADSI',
+    @useself=N'False',
+    @locallogin=NULL,
+    @rmtuser=N'domain\username',
+    @rmtpassword='password'
+END
+GO
+
+SELECT *
+  FROM OPENQUERY
+  (ADSI
+   , 'SELECT CN,mail,SamAccountName,department
+         FROM ''LDAP://your Domain Controller/OU=user,OU=your OU,DC=your DC,DC=yourDC'' 
+     WHERE objectClass = ''Person'' AND ''userAccountControl:1.2.840.113556.1.4.803:''<>2')
+
+除掉被Disable的使用者(!userAccountControl:1.2.840.113556.1.4.803:=2)
+除掉密碼永遠不過期的(!userAccountControl:1.2.840.113556.1.4.803:=65536)
+
+--如果伺服器存在就移除伺服器連接
+IF EXISTS(SELECT * FROM  master.dbo.sysservers WHERE srvname='ADSI')
+BEGIN
+EXEC master.dbo.sp_dropserver
+　　@server = 'ADSI' ,
+　　@droplogins = 'droplogins'
+END
+      </code></pre>
+    </h3>
+    <h5 class="card-text">2、使用介面操作<br></h5>
+    <img class="card-img-top" src="https://linbanana.github.io/linbananaBlog/images/sql link ad/1.PNG" alt="1">
+    <img class="card-img-top" src="https://linbanana.github.io/linbananaBlog/images/sql link ad/2.PNG" alt="2">
+    <h6 class="card-text">　　Linked server: ADSI</h6>
+    <h6 class="card-text">　　Provider: OLE DB Provider for Microsoft Directory Services</h6>
+    <h6 class="card-text">　　Product name: Active Directory Service Interfaces</h6>
+    <h6 class="card-text">　　Data source: adsdatasource</h6>
+    <h6 class="card-text">　　Data source: adsdatasource</h6>
+    <img class="card-img-top" src="https://linbanana.github.io/linbananaBlog/images/sql link ad/3.PNG" alt="3">
+    <h6 class="card-text">　　rmtuser: domain/username</h6>
+    <h6 class="card-text">　　rmtpassword: password</h6>
+    <br><br>
+    <h6 class="card-text">參考文章：https://blog.skufel.net/2012/01/how-to-use-sql-server-to-query-active-directory/</h6>
+  <br><br>
+</div>
+<div class="card-footer text-muted fa fa-calendar">
+  2021/03/16 by
+  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
+  <span class="badge badge-pill badge-primary float-right">SQL</span>
+</div>
+</div>

@@ -2,25 +2,40 @@
 <div class="card mb-4 my-4">
   <div class="card-body">
     <h2 class="card-title">SQL指令應用(合併資料表)</h2><br>
-    <h3 class="card-text">1.合併資料表tb1,tb2(UNION 垂直結合)<br></h3>
+    <h3 class="card-text">1.合併資料表tb1,tb2(CROSS JOIN 交叉連接)<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">交叉連接為兩個資料表間的笛卡兒乘積 (Cartesian product)，兩個資料表在結合時，不指定任何條件，即將兩個資料表中所有的可能排列組合出來，以下例而言 CROSS JOIN 出來的結果資料列數為 3×5=15 筆，因此，當有 WHERE、ON、USING 條件時不建議使用。
+
+1) SELECT `tb1`, `tb2` FROM `tb1`, `tb2`;
+
+2) SELECT `tb1`, `tb2` FROM `tb1` CROSS JOIN `tb2`;
+
+3) SELECT `tb1`, `tb2` FROM `tb1` JOIN `tb2`;
+      </code></pre>
+    </h3>
+    <h3 class="card-text">2.合併資料表tb1,tb2(UNION 垂直結合)<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">SELECT * FROM `tb1` UNION select * from `tb2`;</code></pre>
     </h3>
-    <h3 class="card-text">2.合併資料表tb1,tb2(JOIN 橫向結合)<br></h3>
+    <h3 class="card-text">3.合併資料表tb1,tb2(JOIN 橫向結合)<br></h3>
     <h3 class="card-text">
       <pre><code class="prettyprint">1) INNER JOIN (內部連接) 為等值連接，必需指定等值連接的條件，而查詢結果只會返回符合連接條件的資料。
-　SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 INNER JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
-　or
-  SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 INNER JOIN t2 USING (`欄位名稱`);
+
+   SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 INNER JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
+　 or
+   SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 INNER JOIN t2 USING (`欄位名稱`);
 
 2) LEFT JOIN 可以用來建立左外部連接，查詢的 SQL 敘述句 LEFT JOIN 左側資料表 (t1) 的所有記錄都會加入到查詢結果中，即使右側資料表 (t2) 中的連接欄位沒有符合的值也一樣。
-  　SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 LEFT JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
+
+   SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 LEFT JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
 
 3) RIGHT JOIN 相對於 LEFT JOIN，RIGHT JOIN 可以用來建立右外部連接，查詢的 SQL 敘述句 RIGHT JOIN 右側資料表 (table_name2) 的所有記錄都會加入到查詢結果中，即使左側資料表 (table_name1) 中的連接欄位沒有符合的值也一樣。
-  　SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 RIGHT JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
+
+   SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 RIGHT JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
 
 4) FULL JOIN 即為 LEFT JOIN 與 RIGHT JOIN 的聯集，它會返回左右資料表中所有的紀錄，不論是否符合連接條件。
-  　SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 FULL JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
+
+   SELECT tb1.`欄位名稱`, tb2.`欄位名稱` FROM tb1 FULL JOIN t2 ON tb1.`欄位名稱`=tb2.`欄位名稱`;
 </code></pre>
     </h3>
     <br><br>

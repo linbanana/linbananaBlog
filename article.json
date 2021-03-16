@@ -89,6 +89,18 @@
         "title": "SQL指令應用(合併資料表)",
         "url": "article\\content\\2021031403.html",
         "date": "2021/03/14"
+    },
+    {
+        "class": "SQL",
+        "title": "SQL產生大量資料",
+        "url": "article\\content\\2021031601.html",
+        "date": "2021/03/16"
+    },
+    {
+        "class": "SQL",
+        "title": "Use SQL Server to query Active Directory",
+        "url": "article\\content\\2021031602.html",
+        "date": "2021/03/16"
     }
 
 

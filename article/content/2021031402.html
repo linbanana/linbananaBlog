@@ -36,18 +36,15 @@
     </h3>
     <h3 class="card-text">9.使用範圍設定來顯示特定文字<br></h3>
     <h3 class="card-text">
-      <pre><code class="prettyprint">SELECT `欄位名稱` CASE when `欄位名稱`>=100 then '滿分' when `欄位名稱`>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱`
-;</code></pre>
+      <pre><code class="prettyprint">SELECT `欄位名稱` CASE when `欄位名稱`>=100 then '滿分' when `欄位名稱`>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱`;</code></pre>
     </h3>
     <h3 class="card-text">10.合併應用<br></h3>
     <h3 class="card-text">
-      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名',sum(`欄位名稱`) as '別名',`欄位名稱` CASE when sum(`欄位名稱`)>=100 then '滿分' when sum(uria)>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱` GROUP BY `欄位名稱`
-;</code></pre>
+      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名',sum(`欄位名稱`) as '別名',`欄位名稱` CASE when sum(`欄位名稱`)>=100 then '滿分' when sum(uria)>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱` GROUP BY `欄位名稱`;</code></pre>
     </h3>
     <h3 class="card-text">11.HAVING篩選<br></h3>
     <h3 class="card-text">
-      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名',sum(`欄位名稱`) as '別名',`欄位名稱` CASE when sum(`欄位名稱`)>=100 then '滿分' when sum(uria)>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱` GROUP BY `欄位名稱` HAVING sum(`欄位名稱`)>=100
-;</code></pre>
+      <pre><code class="prettyprint">SELECT `欄位名稱` as '別名',sum(`欄位名稱`) as '別名',`欄位名稱` CASE when sum(`欄位名稱`)>=100 then '滿分' when sum(uria)>=60 then '及格' else '不及格' END as '別名' FROM `資料表名稱` GROUP BY `欄位名稱` HAVING sum(`欄位名稱`)>=100;</code></pre>
     </h3>
     <br><br>
   </div>

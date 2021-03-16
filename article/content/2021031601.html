@@ -1,0 +1,34 @@
+﻿<!-- Blog Post -->
+<div class="card mb-4 my-4">
+  <div class="card-body">
+    <h2 class="card-title">SQL產生大量資料</h2><br>
+    <h3 class="card-text">code如下<br></h3>
+    <h3 class="card-text">
+      <pre><code class="prettyprint">
+DECLARE @i INT
+
+DECLARE @MAX INT
+
+     SET @i = 0
+
+      SET @MAX = 10000
+
+      WHILE (@i<@MAX)
+
+      BEGIN
+
+      INSERT INTO `資料表名稱` (`欄位名稱`, `欄位名稱`)VALUES ('值','值');
+
+      Set @i=@i+1
+
+ END
+      </code></pre>
+    </h3>
+  <br><br>
+</div>
+<div class="card-footer text-muted fa fa-calendar">
+  2021/03/16 by
+  <a href="https://ubin.io/linbanana0803fb">巴那那</a>
+  <span class="badge badge-pill badge-primary float-right">SQL</span>
+</div>
+</div>
