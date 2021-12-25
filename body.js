@@ -42,7 +42,7 @@ var origin = window.location.origin + "\\";
 
 if(origin.indexOf("localhost") == -1){
 
-	// origin = origin + "linbananaBlog\\";
+	origin = origin + "linbananaBlog\\";
 
 }
 var d = new Date();
