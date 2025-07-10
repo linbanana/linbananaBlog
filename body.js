@@ -40,7 +40,7 @@ function include_ico(file) {
 //判斷來源
 var origin = window.location.origin + "\\";
 
-if(origin.indexOf("localhost") == -1){
+if("localhost,127.0.0.1".indexOf(window.location.origin) == -1){
 
 	origin = origin + "linbananaBlog\\";
 
@@ -136,7 +136,7 @@ if((loc.indexOf("index") != -1) || (loc == "")){
 			html_li += "<h2 class='card-title'>網站持續更新中...</h2>";
 			html_li += "</div>";
 			html_li += "<div class='card-footer text-muted'>";
-			html_li += "by<a href='https://ubin.io/linbanana0803fb'>巴那那</a>";
+			html_li += "by<a href='https://facebook.com/linbanana0803'>巴那那</a>";
 			html_li += "</div>";
 			html_li += "</div>";
 			html_li += "</li>";
@@ -153,7 +153,7 @@ if((loc.indexOf("index") != -1) || (loc == "")){
 		html_li += "</div>";
 
 		html_li += "<div class='card-footer text-muted fa fa-calendar'>"+ datastr[i].date +" by";
-		html_li += "<a href='https://ubin.io/linbanana0803fb'>巴那那</a>";
+		html_li += "<a href='https://facebook.com/linbanana0803'>巴那那</a>";
 		html_li += "<span class='badge badge-pill badge-primary float-right'>"+ datastr[i].class +"</span>";
 		html_li += "</div>";
 
